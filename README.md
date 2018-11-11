@@ -21,7 +21,9 @@
 10- open another terminal in scrapy/onlineshopping
 
 11- $celery -A onlineshopping.celery worker -B -l info -E
-** this will run scrapy every 30 seconds (we could change it to run daily instead) **
+** this will run scrapy every 120 seconds (we could change it to run daily instead) **
 
-12- start Front End 
+12- Visit http://127.0.0.1:8000/ for swagger docs.
+
+13- start Front End 
 

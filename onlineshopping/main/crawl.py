@@ -3,7 +3,7 @@ sys.path.append("..")
 from multiprocessing import Process
 from scrapy.conf import settings
 from scrapy_app.scrapy_app.spiders.jumiaSpider import JumiaSpider
-from scrapy_app.scrapy_app.spiders.souqSpider import SouqSpiderSpider
+from scrapy_app.scrapy_app.spiders.souqSpider import SouqSpider
 from scrapy.crawler import CrawlerProcess
 
 
@@ -13,7 +13,7 @@ class CrawlerScript():
 
     def _crawl(self):
         self.crawler.crawl(JumiaSpider())
-        self.crawler.crawl(SouqSpiderSpider())
+        self.crawler.crawl(SouqSpider())
         self.crawler.start()
         self.crawler.stop()
 

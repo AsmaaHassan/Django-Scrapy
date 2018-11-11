@@ -45,10 +45,9 @@ INSTALLED_APPS = [
     'rest_framework',
     'main.apps.MainConfig',
     'django_filters',
-    # 'corsheaders',
-    # 'django_celery_results',
     'django_celery_beat',
     'corsheaders',
+    'rest_framework_swagger'
 
 ]
 

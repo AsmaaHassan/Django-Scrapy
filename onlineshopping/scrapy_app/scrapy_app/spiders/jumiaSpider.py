@@ -1,11 +1,14 @@
 # -*- coding: utf-8 -*-
 import sys
 sys.path.append("....")
-import scrapy
-from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import CrawlSpider, Rule
 from ..items import ScrapyAppItem
 from main.models import ScrapyItem
+
+from twisted.internet import reactor
+import scrapy
+from scrapy.crawler import CrawlerRunner
+from scrapy.utils.log import configure_logging
 
 
 class JumiaSpider(CrawlSpider):
@@ -45,3 +48,10 @@ class JumiaSpider(CrawlSpider):
     def parse_details(self, response):
         item = response.meta
         yield item
+
+configure_logging({'LOG_FORMAT': '%(levelname)s: %(message)s'})
+runner = CrawlerRunner()
+
+d = runner.crawl(JumiaSpider)
+d.addBoth(lambda _: reactor.stop())
+reactor.run() # the script will block here until the crawling is finished
