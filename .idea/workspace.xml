@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f4f2576b-a3e8-464e-8e24-0fbe41690757" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../OnlineShopping/online-shopping/src/app/web-socket.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineshopping/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineshopping/main/crawl.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineshopping/main/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineshopping/main/tasks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineshopping/main/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineshopping/onlineshopping/celery.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineshopping/scrapy_app/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineshopping/scrapy_app/scrapy_app/spiders/souqSpider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Authentication/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Authentication/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Authentication/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Authentication/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Authentication/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Authentication/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Authentication/permissions.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Authentication/permissions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Authentication/recievers.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Authentication/recievers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Authentication/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Authentication/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Authentication/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Authentication/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Authentication/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Authentication/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Clients/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Clients/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Clients/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Clients/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Clients/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Clients/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Clients/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Clients/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Clients/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Clients/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Clients/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Clients/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DB.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MasterData/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/../MasterData/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MasterData/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/../MasterData/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MasterData/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../MasterData/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MasterData/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/../MasterData/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MasterData/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/../MasterData/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MasterData/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../MasterData/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MedicalNetwork/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/../MedicalNetwork/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MedicalNetwork/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/../MedicalNetwork/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MedicalNetwork/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../MedicalNetwork/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MedicalNetwork/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/../MedicalNetwork/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MedicalNetwork/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/../MedicalNetwork/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MedicalNetwork/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../MedicalNetwork/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Notification/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Notification/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Notification/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Notification/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Notification/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Notification/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Notification/redisConfig.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Notification/redisConfig.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Notification/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Notification/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Notification/tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Notification/tasks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Notification/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Notification/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Notification/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Notification/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Operations/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Operations/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Operations/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Operations/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Operations/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Operations/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Operations/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Operations/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Operations/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Operations/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Operations/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Operations/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Reports/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Reports/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Reports/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Reports/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Reports/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Reports/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Reports/recievers.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Reports/recievers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Reports/templates/base_approval_report.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Reports/templates/base_approval_report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Reports/templates/drugs_approval_report.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Reports/templates/drugs_approval_report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Reports/templates/services_approval_report.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Reports/templates/services_approval_report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Reports/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Reports/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Reports/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Reports/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SMS/settings-dev.py" beforeDir="false" afterPath="$PROJECT_DIR$/../SMS/settings-dev.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SMS/settings-prod.py" beforeDir="false" afterPath="$PROJECT_DIR$/../SMS/settings-prod.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SMS/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../SMS/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SMS/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../SMS/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SMS/wsgi-dev.py" beforeDir="false" afterPath="$PROJECT_DIR$/../SMS/wsgi-dev.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SMS/wsgi-prod.py" beforeDir="false" afterPath="$PROJECT_DIR$/../SMS/wsgi-prod.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../delete_migrations.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../delete_migrations.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dumpjson.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../dumpjson.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/css/approval_report.css" beforeDir="false" afterPath="$PROJECT_DIR$/../static/css/approval_report.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/css/batch_report.css" beforeDir="false" afterPath="$PROJECT_DIR$/../static/css/batch_report.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../utilities/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/../utilities/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../utilities/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/../utilities/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../utilities/exception.py" beforeDir="false" afterPath="$PROJECT_DIR$/../utilities/exception.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../utilities/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../utilities/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../utilities/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/../utilities/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../utilities/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../utilities/views.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-2003634532">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.3" value="2" />
+          <entry key="project.open.time.44" value="1" />
+          <entry key="project.open.time.48" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.open.time.97" value="1" />
+          <entry key="project.opened" value="13" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="LOGFILE" value="2" />
+          <entry key="celerybeat-schedule" value="1" />
+          <entry key="cfg" value="4" />
+          <entry key="html" value="2" />
+          <entry key="pid" value="1" />
+          <entry key="py" value="82" />
+          <entry key="txt" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="HTML" value="2" />
+          <entry key="Ini" value="4" />
+          <entry key="PLAIN_TEXT" value="8" />
+          <entry key="Python" value="82" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="Python Console" value="56" />
+          <entry key="dummy" value="19" />
+          <entry key="py" value="4243" />
+          <entry key="txt" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PLAIN_TEXT" value="24" />
+          <entry key="Python" value="4299" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/onlineshopping/scrapy_app/scrapy_app/spiders/jumiaSpider.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/onlineshopping/main/crawl.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret lean-forward="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/onlineshopping/scrapy_app/scrapy_app/spiders/souqSpider.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/onlineshopping/scrapy_app/scrapy_app/pipelines.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="30" selection-start-line="7" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/onlineshopping/onlineshopping/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="159" column="40" selection-start-line="159" selection-start-column="40" selection-end-line="159" selection-end-column="40" />
+              <folding>
+                <element signature="e#314#352#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/onlineshopping/main/tasks.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>image_url</find>
+      <find>pri</find>
+      <find>ScrapyItem</find>
+      <find>envi</find>
+      <find>picha</find>
+      <find>redis</find>
+      <find>5672</find>
+      <find>red</find>
+      <find>brok</find>
+      <find>SCRAPY_SETTINGS_MODULE</find>
+      <find>inst</find>
+      <find>filter</find>
+      <find>midd</find>
+      <find>insta</find>
+      <find>onlineshopping</find>
+      <find>from __future__ import absolute_import</find>
+      <find>BROKER_URL</find>
+      <find>30.</find>
+      <find>pagination</find>
+      <find>rest_f</find>
+      <find>pag</find>
+      <find>beat</find>
+      <find>DomainSpider</find>
+      <find>Domain</find>
+      <find>conf</find>
+      <find>setting</find>
+      <find>os</find>
+      <find>..</find>
+      <find>tasks</find>
+      <find>CrawlerProcess</find>
+    </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/onlineshopping/scrapy_app</dir>
+      <dir>$PROJECT_DIR$/onlineshopping</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/onlineshopping/onlineshopping/urls.py" />
+        <option value="$PROJECT_DIR$/onlineshopping/scrapy_app/scrapy_app/spiders/onlineshopping.py" />
+        <option value="$PROJECT_DIR$/onlineshopping/scrapy_app/scrapy_app/items.py" />
+        <option value="$PROJECT_DIR$/onlineshopping/requirements.txt" />
+        <option value="$PROJECT_DIR$/onlineshopping/main/urls.py" />
+        <option value="$PROJECT_DIR$/onlineshopping/scrapy_app/scrapy.cfg" />
+        <option value="$PROJECT_DIR$/onlineshopping/onlineshopping/__init__.py" />
+        <option value="$PROJECT_DIR$/onlineshopping/onlineshopping/celery.py" />
+        <option value="$PROJECT_DIR$/onlineshopping/main/views.py" />
+        <option value="$PROJECT_DIR$/onlineshopping/main/serializers.py" />
+        <option value="$PROJECT_DIR$/onlineshopping/main/models.py" />
+        <option value="$PROJECT_DIR$/onlineshopping/onlineshopping/crawl.py" />
+        <option value="$PROJECT_DIR$/onlineshopping/scrapy_app/scrapy_app/pipelines.py" />
+        <option value="$PROJECT_DIR$/onlineshopping/scrapy_app/scrapy_app/settings.py" />
+        <option value="$PROJECT_DIR$/onlineshopping/scrapy_app/crawl.py" />
+        <option value="$PROJECT_DIR$/onlineshopping/onlineshopping/settings.py" />
+        <option value="$PROJECT_DIR$/onlineshopping/scrapy_app/scrapy_app/spiders/souqSpider.py" />
+        <option value="$PROJECT_DIR$/onlineshopping/scrapy_app/scrapy_app/spiders/jumiaSpider.py" />
+        <option value="$PROJECT_DIR$/onlineshopping/main/crawl.py" />
+        <option value="$PROJECT_DIR$/onlineshopping/main/tasks.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="-2" />
+    <option name="width" value="1280" />
+    <option name="height" value="1026" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
+      <autoscrollToSource ProjectPane="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="scrapy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapy" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="scrapy" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="scrapy" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="onlineshopping" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="scrapy" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="onlineshopping" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="scrapy_app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="scrapy" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="onlineshopping" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="scrapy_app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="scrapy_app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="scrapy" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="onlineshopping" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="scrapy_app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="scrapy_app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="spiders" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/onlineshopping/main" />
+      <recent name="$PROJECT_DIR$/onlineshopping/scrapy_app" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f4f2576b-a3e8-464e-8e24-0fbe41690757" name="Default Changelist" comment="" />
+      <created>1541161168317</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1541161168317</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="67" y="25" width="1299" height="743" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2801277" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32952693" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5027933" side_tool="true" weight="0.60032624" />
+      <window_info active="true" anchor="bottom" x="90" y="302" width="1253" height="189" id="Terminal" order="11" sideWeight="0.49720672" visible="true" weight="0.43556282" />
+      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49884528" weight="0.32626426" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.32960895" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27693537" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32952693" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5027933" side_tool="true" weight="0.60032624" />
+      <window_info active="true" anchor="bottom" x="90" y="302" width="1253" height="189" id="Terminal" order="11" sideWeight="0.49720672" visible="true" weight="0.54649264" />
+      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49884528" weight="0.32626426" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file:///usr/lib/python3.6/json/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/onlineshopping/scrapy_app/quotes-1.html" />
+    <entry file="file://$PROJECT_DIR$/onlineshopping/scrapy_app/quotes-2.html" />
+    <entry file="file://$PROJECT_DIR$/onlineshopping/scrapy_app/twistd.pid">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/onlineshopping/manage.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/onlineshopping/scrapy_app/scrapy_app/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/onlineshopping/scrapy_app/scrapy_app/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/onlineshopping/main/tasks/scrapy.py" />
+    <entry file="file://$PROJECT_DIR$/onlineshopping/onlineshopping/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="65" selection-start-line="2" selection-start-column="65" selection-end-line="2" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/onlineshopping/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/onlineshopping/scrapy_app/scrapy.cfg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env/lib/python3.6/site-packages/django/conf/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="175" column="13" selection-start-line="175" selection-start-column="13" selection-end-line="175" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/onlineshopping/onlineshopping/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/onlineshopping/celerybeat-schedule">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asmaa.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/onlineshopping/asmaa.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="68" selection-start-line="7" selection-start-column="68" selection-end-line="7" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/onlineshopping/LOGFILE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/onlineshopping/main/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+          <folding>
+            <marker date="1541934465822" expanded="true" signature="2615:2624" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/onlineshopping/main/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/onlineshopping/main/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/onlineshopping/main/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/onlineshopping/main/crawl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env/lib/python3.6/site-packages/scrapy/crawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="247" column="8" selection-start-line="247" selection-start-column="8" selection-end-line="247" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/onlineshopping/onlineshopping/celery.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/onlineshopping/scrapy_app/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/onlineshopping/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/onlineshopping/scrapy_app/scrapy_app/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/onlineshopping/onlineshopping/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="159" column="40" selection-start-line="159" selection-start-column="40" selection-end-line="159" selection-end-column="40" />
+          <folding>
+            <element signature="e#314#352#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/onlineshopping/scrapy_app/scrapy_app/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="30" selection-start-line="7" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/onlineshopping/scrapy_app/scrapy_app/spiders/souqSpider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/onlineshopping/scrapy_app/scrapy_app/spiders/jumiaSpider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/onlineshopping/main/crawl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/onlineshopping/main/tasks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

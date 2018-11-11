@@ -1,0 +1,12 @@
+[2018-11-11 09:39:11,788: INFO/MainProcess] Connected to redis://localhost:6379//
+[2018-11-11 09:39:11,797: INFO/MainProcess] mingle: searching for neighbors
+[2018-11-11 09:39:12,818: INFO/MainProcess] mingle: all alone
+[2018-11-11 09:39:12,834: WARNING/MainProcess] /home/asmaa/Desktop/Asmaa/Work/scrapy/env/lib/python3.6/site-packages/celery/fixups/django.py:200: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2018-11-11 09:39:12,834: INFO/MainProcess] celery@asmaa-HP-EliteBook-8560p ready.
+[2018-11-11 09:41:01,719: INFO/MainProcess] Connected to redis://localhost:6379//
+[2018-11-11 09:41:01,733: INFO/MainProcess] mingle: searching for neighbors
+[2018-11-11 09:41:02,752: INFO/MainProcess] mingle: all alone
+[2018-11-11 09:41:02,769: WARNING/MainProcess] /home/asmaa/Desktop/Asmaa/Work/scrapy/env/lib/python3.6/site-packages/celery/fixups/django.py:200: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2018-11-11 09:41:02,769: INFO/MainProcess] celery@asmaa-HP-EliteBook-8560p ready.

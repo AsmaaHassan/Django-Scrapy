@@ -1,0 +1,1522 @@
+2018-11-07 16:43:32 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: scrapy_app)
+2018-11-07 16:43:32 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.19.0, Twisted 18.9.0, Python 3.6.5 (default, Apr  1 2018, 05:46:30) - [GCC 7.3.0], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Linux-4.15.0-36-generic-x86_64-with-Ubuntu-18.04-bionic
+2018-11-07 16:43:32 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'scrapy_app', 'LOG_FILE': 'logs/default/onlineshopping/400c36fee2ac11e882a32c768add6b27.log', 'NEWSPIDER_MODULE': 'scrapy_app.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['scrapy_app.spiders'], 'USER_AGENT': 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'}
+2018-11-07 16:43:32 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2018-11-07 16:43:32 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-11-07 16:43:32 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-11-07 16:43:32 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_app.pipelines.ScrapyAppPipeline']
+2018-11-07 16:43:32 [scrapy.core.engine] INFO: Spider opened
+2018-11-07 16:43:32 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-11-07 16:43:32 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6024
+2018-11-07 16:43:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/robots.txt> (referer: None)
+2018-11-07 16:43:32 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/> from <GET https://www.jumia.com.eg/?gclid=EAIaIQobChMIwuGavsW-3gIVLJPtCh18CQrbEAAYASAAEgIa-_D_BwE>
+2018-11-07 16:43:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/> (referer: None)
+2018-11-07 16:43:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'one.jumia.com.eg': <GET https://one.jumia.com.eg/>
+2018-11-07 16:43:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'travel.jumia.com': <GET https://travel.jumia.com/en-gb/flights/?utm_source=jumia&utm_medium=mall&utm_campaign=venturebar>
+2018-11-07 16:43:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'travel.jumia.com.eg': <GET https://travel.jumia.com.eg/?utm_source=jumia&utm_medium=mall&utm_campaign=venturebar>
+2018-11-07 16:43:33 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://orange.jumia.com.eg/?internal=top> from <GET https://www.jumia.com.eg/orange-shop/?internal=top>
+2018-11-07 16:43:33 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://www.jumia.com.eg/#brand-tab-0> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2018-11-07 16:43:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'samsung.jumia.com.eg': <GET https://samsung.jumia.com.eg>
+2018-11-07 16:43:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'pampers.jumia.com.eg': <GET https://pampers.jumia.com.eg>
+2018-11-07 16:43:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'intel.jumia.com.eg': <GET https://intel.jumia.com.eg>
+2018-11-07 16:43:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'adidas.jumia.com.eg': <GET https://adidas.jumia.com.eg>
+2018-11-07 16:43:33 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/men-clothing/> from <GET https://www.jumia.com.eg/men-clothing/?shipped_from=jumia_global&internal=fm-global>
+2018-11-07 16:43:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'app.adjust.io': <GET https://app.adjust.io/k4hu4w>
+2018-11-07 16:43:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'play.google.com': <GET https://play.google.com/store/apps/details?id=com.jumia.android&referrer=adjust_reftag%3DcdTxOjM>
+2018-11-07 16:43:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.jumia.dz': <GET https://www.jumia.dz>
+2018-11-07 16:43:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.jumia.cm': <GET https://www.jumia.cm/>
+2018-11-07 16:43:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.jumia.ci': <GET https://www.jumia.ci/>
+2018-11-07 16:43:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.jumia.com.gh': <GET https://www.jumia.com.gh/>
+2018-11-07 16:43:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.jumia.co.ke': <GET https://www.jumia.co.ke/>
+2018-11-07 16:43:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.jumia.ma': <GET https://www.jumia.ma/>
+2018-11-07 16:43:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.jumia.com.ng': <GET https://www.jumia.com.ng/>
+2018-11-07 16:43:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.jumia.sn': <GET https://www.jumia.sn/>
+2018-11-07 16:43:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.jumia.co.tz': <GET https://www.jumia.co.tz/>
+2018-11-07 16:43:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.jumia.com.tn': <GET https://www.jumia.com.tn/>
+2018-11-07 16:43:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.jumia.ug': <GET https://www.jumia.ug/>
+2018-11-07 16:43:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.facebook.com': <GET https://www.facebook.com/JumiaEgypt>
+2018-11-07 16:43:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'twitter.com': <GET https://twitter.com/JUMIAEgypt>
+2018-11-07 16:43:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.instagram.com': <GET https://www.instagram.com/jumiaegypt/>
+2018-11-07 16:43:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.youtube.com': <GET https://www.youtube.com/user/JumiaEgypt>
+2018-11-07 16:43:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'plus.google.com': <GET https://plus.google.com/+JumiaEg>
+2018-11-07 16:43:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'chats.viber.com': <GET http://chats.viber.com/jumiaegypt>
+2018-11-07 16:43:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://orange.jumia.com.eg/robots.txt> (referer: None)
+2018-11-07 16:43:33 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/toys-games/> from <GET https://www.jumia.com.eg/toys-games/?internal=fm-global&shipped_from=jumia_global>
+2018-11-07 16:43:33 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/watches/> from <GET https://www.jumia.com.eg/watches/?internal=fm-global&shipped_from=jumia_global>
+2018-11-07 16:43:33 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/mens-fashion-accessories/> from <GET https://www.jumia.com.eg/mens-fashion-accessories/?internal=fm-global&shipped_from=jumia_global>
+2018-11-07 16:43:33 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/womens-clothing/> from <GET https://www.jumia.com.eg/womens-clothing/?shipped_from=jumia_global&internal=fm-global>
+2018-11-07 16:43:33 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/car-electronics-accessories/> from <GET https://www.jumia.com.eg/car-electronics-accessories/?shipped_from=jumia_global>
+2018-11-07 16:43:33 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/mens-shoes/> from <GET https://www.jumia.com.eg/mens-shoes/?shipped_from=jumia_global&internal=fm-global>
+2018-11-07 16:43:33 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/> from <GET https://www.jumia.com.eg/en/>
+2018-11-07 16:43:33 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/category-fashion-by-jumia/> from <GET https://www.jumia.com.eg/category-fashion-by-jumia/?shipped_from=jumia_global>
+2018-11-07 16:43:33 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/jumia-rewards/> from <GET https://www.jumia.com.eg/jumia-rewards/?internal=HB_STB>
+2018-11-07 16:43:33 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/vendor-page/> from <GET https://www.jumia.com.eg/vendor-page/?internal=homepage_top>
+2018-11-07 16:43:33 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/global-store/> from <GET https://www.jumia.com.eg/global-store/?internal=fm-global>
+2018-11-07 16:43:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/ar/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:34 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/jumia-express/> from <GET https://www.jumia.com.eg/jumia-first/>
+2018-11-07 16:43:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/ar/>
+{'url': 'https://www.jumia.com.eg/ar/'}
+2018-11-07 16:43:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/fawry-jumia/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/orange-redemption-points/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/jumia-corporate/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/privacy/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/fawry-jumia/>
+{'url': 'https://www.jumia.com.eg/fawry-jumia/'}
+2018-11-07 16:43:34 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://orange.jumia.com.eg/> from <GET https://orange.jumia.com.eg/?internal=top>
+2018-11-07 16:43:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/orange-redemption-points/>
+{'url': 'https://www.jumia.com.eg/orange-redemption-points/'}
+2018-11-07 16:43:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/jumia-corporate/>
+{'url': 'https://www.jumia.com.eg/jumia-corporate/'}
+2018-11-07 16:43:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/terms-of-use/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/privacy/>
+{'url': 'https://www.jumia.com.eg/privacy/'}
+2018-11-07 16:43:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/about_us/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/jumia-rewards/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/terms-of-use/>
+{'url': 'https://www.jumia.com.eg/terms-of-use/'}
+2018-11-07 16:43:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/global-store/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/about_us/>
+{'url': 'https://www.jumia.com.eg/about_us/'}
+2018-11-07 16:43:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/jumia-rewards/>
+{'url': 'https://www.jumia.com.eg/jumia-rewards/'}
+2018-11-07 16:43:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/return-policy-cp/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/delivery-timelines/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/jumia-express/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/global-store/>
+{'url': 'https://www.jumia.com.eg/global-store/'}
+2018-11-07 16:43:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/how-to-pay/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/careers/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/return-policy-cp/>
+{'url': 'https://www.jumia.com.eg/return-policy-cp/'}
+2018-11-07 16:43:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/delivery-timelines/>
+{'url': 'https://www.jumia.com.eg/delivery-timelines/'}
+2018-11-07 16:43:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/jumia-express/>
+{'url': 'https://www.jumia.com.eg/jumia-express/'}
+2018-11-07 16:43:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/jumia-affiliate/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/help/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:34 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/womens-fashion-accessories/> from <GET https://www.jumia.com.eg/womens-fashion-accessories/?shipped_from=jumia_global&internal=fm-global>
+2018-11-07 16:43:34 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/womens-shoes/> from <GET https://www.jumia.com.eg/womens-shoes/?shipped_from=jumia_global&internal=fm-global>
+2018-11-07 16:43:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/how-to-shop/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:34 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/mobile-apps/> from <GET http://www.jumia.com.eg/mobile-apps/>
+2018-11-07 16:43:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/contact/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/how-to-pay/>
+{'url': 'https://www.jumia.com.eg/how-to-pay/'}
+2018-11-07 16:43:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/careers/>
+{'url': 'https://www.jumia.com.eg/careers/'}
+2018-11-07 16:43:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/jumia-affiliate/>
+{'url': 'https://www.jumia.com.eg/jumia-affiliate/'}
+2018-11-07 16:43:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/vendor-page/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/help/>
+{'url': 'https://www.jumia.com.eg/help/'}
+2018-11-07 16:43:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/how-to-shop/>
+{'url': 'https://www.jumia.com.eg/how-to-shop/'}
+2018-11-07 16:43:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/contact/>
+{'url': 'https://www.jumia.com.eg/contact/'}
+2018-11-07 16:43:34 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/phones-tablets/> from <GET https://www.jumia.com.eg/phones-tablets/?internal=floor_phonesMainBanner>
+2018-11-07 16:43:34 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/mobile-accessories/> from <GET https://www.jumia.com.eg/mobiles-tablet-accessories/>
+2018-11-07 16:43:34 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/mobile-accessories/> from <GET https://www.jumia.com.eg/all-mobile-accessories/>
+2018-11-07 16:43:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/mobile-phone-accessories-power-banks/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/micro-sd-cards/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/electronic-accessories-supplies/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:34 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/android-phones/> from <GET https://www.jumia.com.eg/added-value/>
+2018-11-07 16:43:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/vendor-page/>
+{'url': 'https://www.jumia.com.eg/vendor-page/'}
+2018-11-07 16:43:34 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/smartphones/> from <GET https://www.jumia.com.eg/smart-phones/>
+2018-11-07 16:43:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://orange.jumia.com.eg/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/mobile-phone-accessories-power-banks/>
+{'url': 'https://www.jumia.com.eg/mobile-phone-accessories-power-banks/'}
+2018-11-07 16:43:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/micro-sd-cards/>
+{'url': 'https://www.jumia.com.eg/micro-sd-cards/'}
+2018-11-07 16:43:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/electronic-accessories-supplies/>
+{'url': 'https://www.jumia.com.eg/electronic-accessories-supplies/'}
+2018-11-07 16:43:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/mobile-apps/> (referer: None)
+2018-11-07 16:43:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/iku/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:35 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/oneclick/> from <GET https://www.jumia.com.eg/one-click/>
+2018-11-07 16:43:35 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://tecno.jumia.com.eg/> from <GET https://www.jumia.com.eg/tecno/>
+2018-11-07 16:43:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://orange.jumia.com.eg/>
+{'url': 'https://orange.jumia.com.eg/'}
+2018-11-07 16:43:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/mobile-apps/>
+{'url': 'https://www.jumia.com.eg/mobile-apps/'}
+2018-11-07 16:43:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/iku/>
+{'url': 'https://www.jumia.com.eg/iku/'}
+2018-11-07 16:43:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/cell-phones-d/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:35 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://www.jumia.com.eg/ila/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/alcatel/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/honor/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:35 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/exercise-fitness-accessories/> from <GET https://www.jumia.com.eg/exercise-fitness-accessories/?shipped_from=country_local>
+2018-11-07 16:43:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/cell-phones-d/>
+{'url': 'https://www.jumia.com.eg/cell-phones-d/'}
+2018-11-07 16:43:35 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/cardio-training-treadmills/> from <GET https://www.jumia.com.eg/cardio-training-treadmills/?shipped_from=country_local>
+2018-11-07 16:43:35 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://www.jumia.com.eg/ila/>: HTTP status code is not handled or not allowed
+2018-11-07 16:43:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/android-phones/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:35 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/swimming/> from <GET https://www.jumia.com.eg/swimming/?shipped_from=country_local>
+2018-11-07 16:43:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tecno.jumia.com.eg/robots.txt> (referer: None)
+2018-11-07 16:43:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/alcatel/>
+{'url': 'https://www.jumia.com.eg/alcatel/'}
+2018-11-07 16:43:35 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/strength-training-equipment/> from <GET https://www.jumia.com.eg/strength-training-equipment/?shipped_from=country_local>
+2018-11-07 16:43:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/honor/>
+{'url': 'https://www.jumia.com.eg/honor/'}
+2018-11-07 16:43:35 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/cardio-training/> from <GET https://www.jumia.com.eg/cardio-training/?shipped_from=country_local&%3Finternal=floor_SportMainBanner>
+2018-11-07 16:43:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/android-phones/>
+{'url': 'https://www.jumia.com.eg/android-phones/'}
+2018-11-07 16:43:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/oppo/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/sporting-goods-outdoor-adventure/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/sporting-goods-outdoor-recreation/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/sports-fitness/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/ufit/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/oppo/>
+{'url': 'https://www.jumia.com.eg/oppo/'}
+2018-11-07 16:43:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/meizu/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/sporting-goods-outdoor-adventure/>
+{'url': 'https://www.jumia.com.eg/sporting-goods-outdoor-adventure/'}
+2018-11-07 16:43:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/exercise-fitness-accessories/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/sporting-goods-outdoor-recreation/>
+{'url': 'https://www.jumia.com.eg/sporting-goods-outdoor-recreation/'}
+2018-11-07 16:43:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/sports-fitness/>
+{'url': 'https://www.jumia.com.eg/sports-fitness/'}
+2018-11-07 16:43:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/pro-hanson/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/ufit/>
+{'url': 'https://www.jumia.com.eg/ufit/'}
+2018-11-07 16:43:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/meizu/>
+{'url': 'https://www.jumia.com.eg/meizu/'}
+2018-11-07 16:43:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/swimming/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/exercise-fitness-accessories/>
+{'url': 'https://www.jumia.com.eg/exercise-fitness-accessories/'}
+2018-11-07 16:43:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/oneclick/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/itel/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/pro-hanson/>
+{'url': 'https://www.jumia.com.eg/pro-hanson/'}
+2018-11-07 16:43:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/cardio-training-treadmills/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/swimming/>
+{'url': 'https://www.jumia.com.eg/swimming/'}
+2018-11-07 16:43:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/cardio-training/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/oneclick/>
+{'url': 'https://www.jumia.com.eg/oneclick/'}
+2018-11-07 16:43:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/itel/>
+{'url': 'https://www.jumia.com.eg/itel/'}
+2018-11-07 16:43:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/mdbuddy/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tecno.jumia.com.eg/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/cardio-training-treadmills/>
+{'url': 'https://www.jumia.com.eg/cardio-training-treadmills/'}
+2018-11-07 16:43:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/cardio-training/>
+{'url': 'https://www.jumia.com.eg/cardio-training/'}
+2018-11-07 16:43:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/mdbuddy/>
+{'url': 'https://www.jumia.com.eg/mdbuddy/'}
+2018-11-07 16:43:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/tyr/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/okuma/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tecno.jumia.com.eg/>
+{'url': 'https://tecno.jumia.com.eg/'}
+2018-11-07 16:43:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/strength-training-equipment/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/union-fitness/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/speedo/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/wilson/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:36 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.jumia.com.eg/3agltak-ds-marketplace/> from <GET https://www.jumia.com.eg/abo-elgoukh/>
+2018-11-07 16:43:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/tyr/>
+{'url': 'https://www.jumia.com.eg/tyr/'}
+2018-11-07 16:43:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/okuma/>
+{'url': 'https://www.jumia.com.eg/okuma/'}
+2018-11-07 16:43:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/oma/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/strength-training-equipment/>
+{'url': 'https://www.jumia.com.eg/strength-training-equipment/'}
+2018-11-07 16:43:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/union-fitness/>
+{'url': 'https://www.jumia.com.eg/union-fitness/'}
+2018-11-07 16:43:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/black-friday-calendar/?internal=HB_STB> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/speedo/>
+{'url': 'https://www.jumia.com.eg/speedo/'}
+2018-11-07 16:43:36 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/groceries/> from <GET https://www.jumia.com.eg/groceries/?internal=floor_groceries>
+2018-11-07 16:43:36 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/rb-marketplace/dettol/> from <GET https://www.jumia.com.eg/dettol/>
+2018-11-07 16:43:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/wilson/>
+{'url': 'https://www.jumia.com.eg/wilson/'}
+2018-11-07 16:43:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/imtenan/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/oma/>
+{'url': 'https://www.jumia.com.eg/oma/'}
+2018-11-07 16:43:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/black-friday-calendar/?internal=HB_STB>
+{'url': 'https://www.jumia.com.eg/black-friday-calendar/?internal=HB_STB'}
+2018-11-07 16:43:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/fine/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/yozuri/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/vitrac/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/imtenan/>
+{'url': 'https://www.jumia.com.eg/imtenan/'}
+2018-11-07 16:43:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/tide/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/nordictrack/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/fine/>
+{'url': 'https://www.jumia.com.eg/fine/'}
+2018-11-07 16:43:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/yozuri/>
+{'url': 'https://www.jumia.com.eg/yozuri/'}
+2018-11-07 16:43:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/ariel/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/vitrac/>
+{'url': 'https://www.jumia.com.eg/vitrac/'}
+2018-11-07 16:43:36 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/aman/> from <GET https://www.jumia.com.eg/aman/?internal=HB_STB>
+2018-11-07 16:43:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/tide/>
+{'url': 'https://www.jumia.com.eg/tide/'}
+2018-11-07 16:43:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/nordictrack/>
+{'url': 'https://www.jumia.com.eg/nordictrack/'}
+2018-11-07 16:43:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/acc-bundel/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/ariel/>
+{'url': 'https://www.jumia.com.eg/ariel/'}
+2018-11-07 16:43:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/rb-marketplace/dettol/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:36 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/womens-jewelry/> from <GET https://www.jumia.com.eg/womens-jewelry/?shipped_from=country_local>
+2018-11-07 16:43:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/body-sculpture/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/lipton/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:36 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/womens-bags/> from <GET https://www.jumia.com.eg/womens-bags/?shipped_from=country_local>
+2018-11-07 16:43:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/acc-bundel/>
+{'url': 'https://www.jumia.com.eg/acc-bundel/'}
+2018-11-07 16:43:36 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/watches-sunglasses/> from <GET https://www.jumia.com.eg/watches-sunglasses/?shipped_from=country_local&internal=floor_WatchesAccessoriesMainBanner>
+2018-11-07 16:43:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/rb-marketplace/dettol/>
+{'url': 'https://www.jumia.com.eg/rb-marketplace/dettol/'}
+2018-11-07 16:43:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/body-sculpture/>
+{'url': 'https://www.jumia.com.eg/body-sculpture/'}
+2018-11-07 16:43:36 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/womens-costumes-eyewear/> from <GET https://www.jumia.com.eg/women-eyewear/>
+2018-11-07 16:43:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/coca-cola/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:36 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/mens-sunglasses-eyewear-accessories/> from <GET https://www.jumia.com.eg/men-eyewear/>
+2018-11-07 16:43:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/lipton/>
+{'url': 'https://www.jumia.com.eg/lipton/'}
+2018-11-07 16:43:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/ocean/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/coca-cola/>
+{'url': 'https://www.jumia.com.eg/coca-cola/'}
+2018-11-07 16:43:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/abu-auf/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/lacobra/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/ibso/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/aman/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/ocean/>
+{'url': 'https://www.jumia.com.eg/ocean/'}
+2018-11-07 16:43:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/gshock/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/abu-auf/>
+{'url': 'https://www.jumia.com.eg/abu-auf/'}
+2018-11-07 16:43:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/lacobra/>
+{'url': 'https://www.jumia.com.eg/lacobra/'}
+2018-11-07 16:43:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/ibso/>
+{'url': 'https://www.jumia.com.eg/ibso/'}
+2018-11-07 16:43:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/3agltak-ds-marketplace/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/aman/>
+{'url': 'https://www.jumia.com.eg/aman/'}
+2018-11-07 16:43:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/gshock/>
+{'url': 'https://www.jumia.com.eg/gshock/'}
+2018-11-07 16:43:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/siran/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/womens-costumes-eyewear/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/citizen/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/btc-by-egypt-gold/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/3agltak-ds-marketplace/>
+{'url': 'https://www.jumia.com.eg/3agltak-ds-marketplace/'}
+2018-11-07 16:43:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/siran/>
+{'url': 'https://www.jumia.com.eg/siran/'}
+2018-11-07 16:43:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/fossil/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/womens-costumes-eyewear/>
+{'url': 'https://www.jumia.com.eg/womens-costumes-eyewear/'}
+2018-11-07 16:43:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/citizen/>
+{'url': 'https://www.jumia.com.eg/citizen/'}
+2018-11-07 16:43:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/btc-by-egypt-gold/>
+{'url': 'https://www.jumia.com.eg/btc-by-egypt-gold/'}
+2018-11-07 16:43:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/mens-sunglasses-eyewear-accessories/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/lacoste/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/michael-kors/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/aldo/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:37 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/all-products/> from <GET https://www.jumia.com.eg/all-products/?shop_premium_services=shop_express&internal=HB_STB>
+2018-11-07 16:43:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/fossil/>
+{'url': 'https://www.jumia.com.eg/fossil/'}
+2018-11-07 16:43:37 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/womens-hair-removal-products/> from <GET https://www.jumia.com.eg/womens-hair-removal-products/?shipped_from=country_local>
+2018-11-07 16:43:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/mens-sunglasses-eyewear-accessories/>
+{'url': 'https://www.jumia.com.eg/mens-sunglasses-eyewear-accessories/'}
+2018-11-07 16:43:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/lacoste/>
+{'url': 'https://www.jumia.com.eg/lacoste/'}
+2018-11-07 16:43:37 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/health-beauty/> from <GET https://www.jumia.com.eg/health-beauty/?internal=floor_HealthBeauty>
+2018-11-07 16:43:37 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/make-up-tools/> from <GET https://www.jumia.com.eg/accessories-and-tools/>
+2018-11-07 16:43:37 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/lips-make-up/> from <GET https://www.jumia.com.eg/lips-makeup/>
+2018-11-07 16:43:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/michael-kors/>
+{'url': 'https://www.jumia.com.eg/michael-kors/'}
+2018-11-07 16:43:37 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/nail-makeup/> from <GET https://www.jumia.com.eg/nails-makeup/>
+2018-11-07 16:43:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/aldo/>
+{'url': 'https://www.jumia.com.eg/aldo/'}
+2018-11-07 16:43:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/ray-ban/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:37 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/womens-make-up/> from <GET https://www.jumia.com.eg/make-up/>
+2018-11-07 16:43:37 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/womens-face-make-up/> from <GET https://www.jumia.com.eg/face-make-up/>
+2018-11-07 16:43:37 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/fragrances-allgenders/> from <GET https://www.jumia.com.eg/perfumes/>
+2018-11-07 16:43:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/watches/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/eyes-makeup/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:37 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/bath-bathing-accessories/> from <GET https://www.jumia.com.eg/bathing-and-personal-care/>
+2018-11-07 16:43:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/ray-ban/>
+{'url': 'https://www.jumia.com.eg/ray-ban/'}
+2018-11-07 16:43:37 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/hair-clippers-accessories/> from <GET https://www.jumia.com.eg/trimmers-clippers/>
+2018-11-07 16:43:37 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/hair-loss-treatment-products/> from <GET https://www.jumia.com.eg/hair-treatments/>
+2018-11-07 16:43:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/watches/>
+{'url': 'https://www.jumia.com.eg/watches/'}
+2018-11-07 16:43:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/eyes-makeup/>
+{'url': 'https://www.jumia.com.eg/eyes-makeup/'}
+2018-11-07 16:43:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/lips-make-up/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:37 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/skin-care-products/> from <GET https://www.jumia.com.eg/skin-care-for-men/>
+2018-11-07 16:43:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/make-up-tools/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/nail-makeup/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/lips-make-up/>
+{'url': 'https://www.jumia.com.eg/lips-make-up/'}
+2018-11-07 16:43:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/womens-hair-removal-products/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:37 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/health-care/> from <GET https://www.jumia.com.eg/men-care/>
+2018-11-07 16:43:37 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/shave-hair-removal-products/> from <GET https://www.jumia.com.eg/hair-removal/>
+2018-11-07 16:43:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/womens-face-make-up/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/casio/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/make-up-tools/>
+{'url': 'https://www.jumia.com.eg/make-up-tools/'}
+2018-11-07 16:43:37 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/hair-care/> from <GET https://www.jumia.com.eg/womens-haircare/>
+2018-11-07 16:43:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/nail-makeup/>
+{'url': 'https://www.jumia.com.eg/nail-makeup/'}
+2018-11-07 16:43:38 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/skin-care-prducts/> from <GET https://www.jumia.com.eg/skin-body-care/>
+2018-11-07 16:43:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/womens-hair-removal-products/>
+{'url': 'https://www.jumia.com.eg/womens-hair-removal-products/'}
+2018-11-07 16:43:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/womens-face-make-up/>
+{'url': 'https://www.jumia.com.eg/womens-face-make-up/'}
+2018-11-07 16:43:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/casio/>
+{'url': 'https://www.jumia.com.eg/casio/'}
+2018-11-07 16:43:38 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/personal-care/> from <GET https://www.jumia.com.eg/women-care/>
+2018-11-07 16:43:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/hair-clippers-accessories/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/hair-loss-treatment-products/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:38 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/eva-cosmetics/> from <GET https://www.jumia.com.eg/eva/>
+2018-11-07 16:43:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/personal-care-d/nivea--dove--lux--eva--bioderma--fa--body-fantasies--la-roche-posay--gillette--johnson--axe--victoria-s-secret--vichy--uriage--rexona--l-oreal--garnier/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/hair-clippers-accessories/>
+{'url': 'https://www.jumia.com.eg/hair-clippers-accessories/'}
+2018-11-07 16:43:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/hair-loss-treatment-products/>
+{'url': 'https://www.jumia.com.eg/hair-loss-treatment-products/'}
+2018-11-07 16:43:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/skin-care-products/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/head-shoulders/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/durex/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/shave-hair-removal-products/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/carolinaherrera/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/personal-care-d/nivea--dove--lux--eva--bioderma--fa--body-fantasies--la-roche-posay--gillette--johnson--axe--victoria-s-secret--vichy--uriage--rexona--l-oreal--garnier/>
+{'url': 'https://www.jumia.com.eg/personal-care-d/nivea--dove--lux--eva--bioderma--fa--body-fantasies--la-roche-posay--gillette--johnson--axe--victoria-s-secret--vichy--uriage--rexona--l-oreal--garnier/'}
+2018-11-07 16:43:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/skin-care-products/>
+{'url': 'https://www.jumia.com.eg/skin-care-products/'}
+2018-11-07 16:43:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/head-shoulders/>
+{'url': 'https://www.jumia.com.eg/head-shoulders/'}
+2018-11-07 16:43:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/guess/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/durex/>
+{'url': 'https://www.jumia.com.eg/durex/'}
+2018-11-07 16:43:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/hair-care/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/shave-hair-removal-products/>
+{'url': 'https://www.jumia.com.eg/shave-hair-removal-products/'}
+2018-11-07 16:43:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/carolinaherrera/>
+{'url': 'https://www.jumia.com.eg/carolinaherrera/'}
+2018-11-07 16:43:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/pantene/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/personal-care/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/guess/>
+{'url': 'https://www.jumia.com.eg/guess/'}
+2018-11-07 16:43:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/hair-care/>
+{'url': 'https://www.jumia.com.eg/hair-care/'}
+2018-11-07 16:43:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/pantene/>
+{'url': 'https://www.jumia.com.eg/pantene/'}
+2018-11-07 16:43:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/bath-bathing-accessories/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/oral-b/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/l-oreal/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:38 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/new-arrival/> from <GET https://www.jumia.com.eg/new-arrival/?internal=HB_STB>
+2018-11-07 16:43:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/personal-care/>
+{'url': 'https://www.jumia.com.eg/personal-care/'}
+2018-11-07 16:43:38 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/womens-sneakers/> from <GET https://www.jumia.com.eg/womens-sneakers/?shipped_from=country_local>
+2018-11-07 16:43:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/bath-bathing-accessories/>
+{'url': 'https://www.jumia.com.eg/bath-bathing-accessories/'}
+2018-11-07 16:43:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/oral-b/>
+{'url': 'https://www.jumia.com.eg/oral-b/'}
+2018-11-07 16:43:38 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/womens-coats-jackets-vests/> from <GET https://www.jumia.com.eg/womens-coats-jackets-vests/?shipped_from=country_local>
+2018-11-07 16:43:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/l-oreal/>
+{'url': 'https://www.jumia.com.eg/l-oreal/'}
+2018-11-07 16:43:38 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/womens-sweaters/> from <GET https://www.jumia.com.eg/womens-sweaters/?shipped_from=country_local>
+2018-11-07 16:43:38 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/womens-dresses/> from <GET https://www.jumia.com.eg/womens-dresses/?shipped_from=country_local>
+2018-11-07 16:43:38 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/womens-boots/> from <GET https://www.jumia.com.eg/womens-boots/?shipped_from=country_local&internal=floor_WomenFashionMainBanner>
+2018-11-07 16:43:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/all-products/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/pacorabanne/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/dove/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:38 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/womens-watches/> from <GET https://www.jumia.com.eg/for-women-watches/>
+2018-11-07 16:43:38 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/womens-fashion-accessories/> from <GET https://www.jumia.com.eg/womens-accessories/>
+2018-11-07 16:43:38 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/womens-loafers-slip-ons/> from <GET https://www.jumia.com.eg/womens-ballerinas-moccasins/>
+2018-11-07 16:43:38 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/womens-sandals-slippers/> from <GET https://www.jumia.com.eg/womens-sandals/>
+2018-11-07 16:43:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/all-products/>
+{'url': 'https://www.jumia.com.eg/all-products/'}
+2018-11-07 16:43:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/pacorabanne/>
+{'url': 'https://www.jumia.com.eg/pacorabanne/'}
+2018-11-07 16:43:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/dove/>
+{'url': 'https://www.jumia.com.eg/dove/'}
+2018-11-07 16:43:38 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/womens-jeans/> from <GET https://www.jumia.com.eg/women-jeans-pants/>
+2018-11-07 16:43:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/new-arrival/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:39 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://www.jumia.com.eg/eva-cosmetics/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/womens-dresses/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/womens-boots/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:39 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/womens-cardigans/> from <GET https://www.jumia.com.eg/women-cardigans-kimonos/>
+2018-11-07 16:43:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/new-arrival/>
+{'url': 'https://www.jumia.com.eg/new-arrival/'}
+2018-11-07 16:43:39 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://www.jumia.com.eg/eva-cosmetics/>: HTTP status code is not handled or not allowed
+2018-11-07 16:43:39 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/womens-tops-tees/> from <GET https://www.jumia.com.eg/women-tops-tshirts/>
+2018-11-07 16:43:39 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/womens-dresses/> from <GET https://www.jumia.com.eg/women-dresses/>
+2018-11-07 16:43:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/womens-dresses/>
+{'url': 'https://www.jumia.com.eg/womens-dresses/'}
+2018-11-07 16:43:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/womens-boots/>
+{'url': 'https://www.jumia.com.eg/womens-boots/'}
+2018-11-07 16:43:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/womens-sneakers/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/womens-sweaters/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/womens-loafers-slip-ons/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/womens-sandals-slippers/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/womens-coats-jackets-vests/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/womens-sneakers/>
+{'url': 'https://www.jumia.com.eg/womens-sneakers/'}
+2018-11-07 16:43:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/womens-jewelry/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/womens-sweaters/>
+{'url': 'https://www.jumia.com.eg/womens-sweaters/'}
+2018-11-07 16:43:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/womens-loafers-slip-ons/>
+{'url': 'https://www.jumia.com.eg/womens-loafers-slip-ons/'}
+2018-11-07 16:43:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/womens-jeans/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/womens-sandals-slippers/>
+{'url': 'https://www.jumia.com.eg/womens-sandals-slippers/'}
+2018-11-07 16:43:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/womens-coats-jackets-vests/>
+{'url': 'https://www.jumia.com.eg/womens-coats-jackets-vests/'}
+2018-11-07 16:43:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/pixi/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/womens-watches/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/dejavu/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/mr-joe/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/joy-roy/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/womens-cardigans/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/womens-jewelry/>
+{'url': 'https://www.jumia.com.eg/womens-jewelry/'}
+2018-11-07 16:43:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/womens-jeans/>
+{'url': 'https://www.jumia.com.eg/womens-jeans/'}
+2018-11-07 16:43:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/pixi/>
+{'url': 'https://www.jumia.com.eg/pixi/'}
+2018-11-07 16:43:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/womens-watches/>
+{'url': 'https://www.jumia.com.eg/womens-watches/'}
+2018-11-07 16:43:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/dejavu/>
+{'url': 'https://www.jumia.com.eg/dejavu/'}
+2018-11-07 16:43:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/mr-joe/>
+{'url': 'https://www.jumia.com.eg/mr-joe/'}
+2018-11-07 16:43:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/joy-roy/>
+{'url': 'https://www.jumia.com.eg/joy-roy/'}
+2018-11-07 16:43:39 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/womens-fashion/> from <GET https://www.jumia.com.eg/women-fashion/>
+2018-11-07 16:43:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/esla/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/womens-cardigans/>
+{'url': 'https://www.jumia.com.eg/womens-cardigans/'}
+2018-11-07 16:43:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/m-sou/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:39 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/treasure-hunt/> from <GET https://www.jumia.com.eg/treasure-hunt/?internal=HB_STB>
+2018-11-07 16:43:39 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/mens-jackets-coats/> from <GET https://www.jumia.com.eg/mens-jackets-coats/?shipped_from=country_local>
+2018-11-07 16:43:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/esla/>
+{'url': 'https://www.jumia.com.eg/esla/'}
+2018-11-07 16:43:39 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/mens-loafers-slip-ons/> from <GET https://www.jumia.com.eg/mens-loafers-slip-ons/?shipped_from=country_local>
+2018-11-07 16:43:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/m-sou/>
+{'url': 'https://www.jumia.com.eg/m-sou/'}
+2018-11-07 16:43:40 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/mens-underwear/> from <GET https://www.jumia.com.eg/mens-underwear/?shipped_from=country_local>
+2018-11-07 16:43:40 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/mens-hoodies-sweatshirts/> from <GET https://www.jumia.com.eg/mens-hoodies-sweatshirts/?shipped_from=country_local>
+2018-11-07 16:43:40 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/mens-shoes/> from <GET https://www.jumia.com.eg/mens-shoes/?internal=floor_MenFashion>
+2018-11-07 16:43:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/tata-tio/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/femina/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:40 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/mens-fashion-accessories/> from <GET https://www.jumia.com.eg/mens-bags/>
+2018-11-07 16:43:40 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/mens-watches/> from <GET https://www.jumia.com.eg/for-men-watches/>
+2018-11-07 16:43:40 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/mens-fashion-accessories/> from <GET https://www.jumia.com.eg/mens-accessories/>
+2018-11-07 16:43:40 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/mens-jewelry/> from <GET https://www.jumia.com.eg/men-jewelry/>
+2018-11-07 16:43:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/tata-tio/>
+{'url': 'https://www.jumia.com.eg/tata-tio/'}
+2018-11-07 16:43:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/bella-donna/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/giro/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:40 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/mens-athletic-shoes/> from <GET https://www.jumia.com.eg/men-sports-shoes/>
+2018-11-07 16:43:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/femina/>
+{'url': 'https://www.jumia.com.eg/femina/'}
+2018-11-07 16:43:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/mens-loafers-slip-ons/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/bella-donna/>
+{'url': 'https://www.jumia.com.eg/bella-donna/'}
+2018-11-07 16:43:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/giro/>
+{'url': 'https://www.jumia.com.eg/giro/'}
+2018-11-07 16:43:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/treasure-hunt/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/womens-tops-tees/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:40 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/mens-loafers-slip-ons/> from <GET https://www.jumia.com.eg/mens-casual-shoes/>
+2018-11-07 16:43:40 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/mens-mules-clogs-shoes/> from <GET https://www.jumia.com.eg/men-slippers/>
+2018-11-07 16:43:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/mens-underwear/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/mens-hoodies-sweatshirts/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:40 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/men-clothing/> from <GET https://www.jumia.com.eg/men-jeans-pants/>
+2018-11-07 16:43:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/mens-loafers-slip-ons/>
+{'url': 'https://www.jumia.com.eg/mens-loafers-slip-ons/'}
+2018-11-07 16:43:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/treasure-hunt/>
+{'url': 'https://www.jumia.com.eg/treasure-hunt/'}
+2018-11-07 16:43:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/womens-tops-tees/>
+{'url': 'https://www.jumia.com.eg/womens-tops-tees/'}
+2018-11-07 16:43:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/mens-underwear/>
+{'url': 'https://www.jumia.com.eg/mens-underwear/'}
+2018-11-07 16:43:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/mens-hoodies-sweatshirts/>
+{'url': 'https://www.jumia.com.eg/mens-hoodies-sweatshirts/'}
+2018-11-07 16:43:40 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/men-clothing/> from <GET https://www.jumia.com.eg/mens-clothing/>
+2018-11-07 16:43:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/mens-athletic-shoes/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/mens-jewelry/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/mens-jackets-coats/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/mens-athletic-shoes/>
+{'url': 'https://www.jumia.com.eg/mens-athletic-shoes/'}
+2018-11-07 16:43:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/mens-jewelry/>
+{'url': 'https://www.jumia.com.eg/mens-jewelry/'}
+2018-11-07 16:43:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/ibrand/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/agu/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/mens-jackets-coats/>
+{'url': 'https://www.jumia.com.eg/mens-jackets-coats/'}
+2018-11-07 16:43:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/ibrand/>
+{'url': 'https://www.jumia.com.eg/ibrand/'}
+2018-11-07 16:43:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/agu/>
+{'url': 'https://www.jumia.com.eg/agu/'}
+2018-11-07 16:43:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/mens-mules-clogs-shoes/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/mens-watches/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/cottonil/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/mens-mules-clogs-shoes/>
+{'url': 'https://www.jumia.com.eg/mens-mules-clogs-shoes/'}
+2018-11-07 16:43:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/mens-watches/>
+{'url': 'https://www.jumia.com.eg/mens-watches/'}
+2018-11-07 16:43:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/crocs/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/mens-polos/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/momo/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/cottonil/>
+{'url': 'https://www.jumia.com.eg/cottonil/'}
+2018-11-07 16:43:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/dockland/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/mens-t-shirts/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/crocs/>
+{'url': 'https://www.jumia.com.eg/crocs/'}
+2018-11-07 16:43:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/mens-polos/>
+{'url': 'https://www.jumia.com.eg/mens-polos/'}
+2018-11-07 16:43:41 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/oxford--bellini--tie-house--milano/> from <GET https://www.jumia.com.eg/tie-house/>
+2018-11-07 16:43:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/shoes-club/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/momo/>
+{'url': 'https://www.jumia.com.eg/momo/'}
+2018-11-07 16:43:41 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/mens-fashion/> from <GET https://www.jumia.com.eg/men-fashion/>
+2018-11-07 16:43:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/dockland/>
+{'url': 'https://www.jumia.com.eg/dockland/'}
+2018-11-07 16:43:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/mens-t-shirts/>
+{'url': 'https://www.jumia.com.eg/mens-t-shirts/'}
+2018-11-07 16:43:41 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/all-products/> from <GET https://www.jumia.com.eg/all-products/?internal=HB_STB>
+2018-11-07 16:43:41 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/inkjet-printer-ink/> from <GET https://www.jumia.com.eg/inks/>
+2018-11-07 16:43:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/shoes-club/>
+{'url': 'https://www.jumia.com.eg/shoes-club/'}
+2018-11-07 16:43:41 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/laptops/> from <GET https://www.jumia.com.eg/laptops/?internal=floor_LaptopsMainBanner>
+2018-11-07 16:43:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/diadora/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:41 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/laser-printer-drums-toner/> from <GET https://www.jumia.com.eg/toners/>
+2018-11-07 16:43:41 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/photo-paper/> from <GET https://www.jumia.com.eg/print-photo-paper/>
+2018-11-07 16:43:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/diadora/>
+{'url': 'https://www.jumia.com.eg/diadora/'}
+2018-11-07 16:43:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/laptop-backpacks/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/ravin/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:41 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/external-hd/> from <GET https://www.jumia.com.eg/external-hard-drives/>
+2018-11-07 16:43:41 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/laptops/> from <GET https://www.jumia.com.eg/everyday-laptops/>
+2018-11-07 16:43:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/laptop-backpacks/>
+{'url': 'https://www.jumia.com.eg/laptop-backpacks/'}
+2018-11-07 16:43:41 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/camera-photo-sd-sdhc-cards/> from <GET https://www.jumia.com.eg/memory-cards/>
+2018-11-07 16:43:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/ravin/>
+{'url': 'https://www.jumia.com.eg/ravin/'}
+2018-11-07 16:43:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/multi-function-printers/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/fila/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/multi-function-printers/>
+{'url': 'https://www.jumia.com.eg/multi-function-printers/'}
+2018-11-07 16:43:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/traditional-laptops/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/i-life/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/fila/>
+{'url': 'https://www.jumia.com.eg/fila/'}
+2018-11-07 16:43:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/traditional-laptops/>
+{'url': 'https://www.jumia.com.eg/traditional-laptops/'}
+2018-11-07 16:43:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/i-life/>
+{'url': 'https://www.jumia.com.eg/i-life/'}
+2018-11-07 16:43:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/seagate/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/inkjet-printer-ink/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/laptops/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/photo-paper/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/laser-printer-drums-toner/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/oxford--bellini--tie-house--milano/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/seagate/>
+{'url': 'https://www.jumia.com.eg/seagate/'}
+2018-11-07 16:43:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/inkjet-printer-ink/>
+{'url': 'https://www.jumia.com.eg/inkjet-printer-ink/'}
+2018-11-07 16:43:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/laptops/>
+{'url': 'https://www.jumia.com.eg/laptops/'}
+2018-11-07 16:43:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/photo-paper/>
+{'url': 'https://www.jumia.com.eg/photo-paper/'}
+2018-11-07 16:43:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/western-digital/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/laser-printer-drums-toner/>
+{'url': 'https://www.jumia.com.eg/laser-printer-drums-toner/'}
+2018-11-07 16:43:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/oxford--bellini--tie-house--milano/>
+{'url': 'https://www.jumia.com.eg/oxford--bellini--tie-house--milano/'}
+2018-11-07 16:43:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/camera-photo-sd-sdhc-cards/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/external-hd/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/western-digital/>
+{'url': 'https://www.jumia.com.eg/western-digital/'}
+2018-11-07 16:43:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/hp/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/camera-photo-sd-sdhc-cards/>
+{'url': 'https://www.jumia.com.eg/camera-photo-sd-sdhc-cards/'}
+2018-11-07 16:43:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/external-hd/>
+{'url': 'https://www.jumia.com.eg/external-hd/'}
+2018-11-07 16:43:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/lenovo/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:42 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/mobile-apps/> from <GET https://www.jumia.com.eg/mobile-apps/?internal=HB_STB>
+2018-11-07 16:43:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/scanners/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/hp/>
+{'url': 'https://www.jumia.com.eg/hp/'}
+2018-11-07 16:43:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/activ/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/lenovo/>
+{'url': 'https://www.jumia.com.eg/lenovo/'}
+2018-11-07 16:43:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/home-improvement-appliances/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:42 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/home-improvement-appliances/> from <GET https://www.jumia.com.eg/home-improvement-appliances/?internal=floor_Home>
+2018-11-07 16:43:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/scanners/>
+{'url': 'https://www.jumia.com.eg/scanners/'}
+2018-11-07 16:43:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/kingston/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/activ/>
+{'url': 'https://www.jumia.com.eg/activ/'}
+2018-11-07 16:43:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/home-kitchen-furniture/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/tp-link-/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/home-improvement-appliances/>
+{'url': 'https://www.jumia.com.eg/home-improvement-appliances/'}
+2018-11-07 16:43:43 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/kitchen-dining-cookware/> from <GET https://www.jumia.com.eg/cookware/>
+2018-11-07 16:43:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/kingston/>
+{'url': 'https://www.jumia.com.eg/kingston/'}
+2018-11-07 16:43:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/kitchen-utensils-gadgets/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:43 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/kitchen-accessories/> from <GET https://www.jumia.com.eg/kitchen-tool-accessories/>
+2018-11-07 16:43:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/home-kitchen-furniture/>
+{'url': 'https://www.jumia.com.eg/home-kitchen-furniture/'}
+2018-11-07 16:43:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/tp-link-/>
+{'url': 'https://www.jumia.com.eg/tp-link-/'}
+2018-11-07 16:43:43 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/patio-chair/> from <GET https://www.jumia.com.eg/outdoor-chair/>
+2018-11-07 16:43:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/kitchen-utensils-gadgets/>
+{'url': 'https://www.jumia.com.eg/kitchen-utensils-gadgets/'}
+2018-11-07 16:43:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/outdoor-camping-furniture/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:43 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/travel-to-go-food-containers/> from <GET https://www.jumia.com.eg/travel-accessories/>
+2018-11-07 16:43:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/sandisk/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/home-kitchen-tools-accessories/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/dell/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/umbrellas-canopy-shade/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:43 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/beverage-serveware/> from <GET https://www.jumia.com.eg/drink-holder/>
+2018-11-07 16:43:43 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/home-kitchen-dining/> from <GET https://www.jumia.com.eg/kitchen-dining/>
+2018-11-07 16:43:43 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/grilling-barbecue-utensils/> from <GET https://www.jumia.com.eg/barbeque-accessories/>
+2018-11-07 16:43:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/outdoor-camping-furniture/>
+{'url': 'https://www.jumia.com.eg/outdoor-camping-furniture/'}
+2018-11-07 16:43:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/sandisk/>
+{'url': 'https://www.jumia.com.eg/sandisk/'}
+2018-11-07 16:43:43 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/happy-hours/> from <GET https://www.jumia.com.eg/happy-hours/?internal=HB_STB>
+2018-11-07 16:43:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/kitchen-accessories/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/grill-outdoor-entertaining/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/home-kitchen-tools-accessories/>
+{'url': 'https://www.jumia.com.eg/home-kitchen-tools-accessories/'}
+2018-11-07 16:43:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/dell/>
+{'url': 'https://www.jumia.com.eg/dell/'}
+2018-11-07 16:43:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/umbrellas-canopy-shade/>
+{'url': 'https://www.jumia.com.eg/umbrellas-canopy-shade/'}
+2018-11-07 16:43:43 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/televisions/> from <GET https://www.jumia.com.eg/televisions/?internal=floor_ComputingMainBanner>
+2018-11-07 16:43:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/kitchen-dining-cookware/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:43 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/> from <GET https://www.jumia.com.eg/xbox-one-games/>
+2018-11-07 16:43:43 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/> from <GET https://www.jumia.com.eg/playstation-3-games/>
+2018-11-07 16:43:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/kitchen-accessories/>
+{'url': 'https://www.jumia.com.eg/kitchen-accessories/'}
+2018-11-07 16:43:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/grill-outdoor-entertaining/>
+{'url': 'https://www.jumia.com.eg/grill-outdoor-entertaining/'}
+2018-11-07 16:43:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/playstation-4-games/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:43 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/electronics-dvd-players/> from <GET https://www.jumia.com.eg/home-theaters-dvd-players/>
+2018-11-07 16:43:43 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/electronics-av-receivers/> from <GET https://www.jumia.com.eg/av-receivers/>
+2018-11-07 16:43:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/kitchen-dining-cookware/>
+{'url': 'https://www.jumia.com.eg/kitchen-dining-cookware/'}
+2018-11-07 16:43:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/beverage-serveware/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:43 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/led-lcd-tvs/> from <GET https://www.jumia.com.eg/led-and-lcd-tvs/>
+2018-11-07 16:43:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/xbox-accessories/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/playstation-4-games/>
+{'url': 'https://www.jumia.com.eg/playstation-4-games/'}
+2018-11-07 16:43:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/happy-hours/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/travel-to-go-food-containers/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/beverage-serveware/>
+{'url': 'https://www.jumia.com.eg/beverage-serveware/'}
+2018-11-07 16:43:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/xbox-accessories/>
+{'url': 'https://www.jumia.com.eg/xbox-accessories/'}
+2018-11-07 16:43:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/canon/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/ea/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/microsoft/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/happy-hours/>
+{'url': 'https://www.jumia.com.eg/happy-hours/'}
+2018-11-07 16:43:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/travel-to-go-food-containers/>
+{'url': 'https://www.jumia.com.eg/travel-to-go-food-containers/'}
+2018-11-07 16:43:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/grilling-barbecue-utensils/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:43 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/sellers-you-trust/> from <GET https://www.jumia.com.eg/sellers-you-trust/?internal=HB_STB>
+2018-11-07 16:43:43 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/all-products/> from <GET https://www.jumia.com.eg/all-products/?shop_premium_services=shop_express&internal=HPTeaser2>
+2018-11-07 16:43:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/canon/>
+{'url': 'https://www.jumia.com.eg/canon/'}
+2018-11-07 16:43:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/ea/>
+{'url': 'https://www.jumia.com.eg/ea/'}
+2018-11-07 16:43:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/microsoft/>
+{'url': 'https://www.jumia.com.eg/microsoft/'}
+2018-11-07 16:43:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/grilling-barbecue-utensils/>
+{'url': 'https://www.jumia.com.eg/grilling-barbecue-utensils/'}
+2018-11-07 16:43:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/nintendo/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/electronics-av-receivers/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/electronics-dvd-players/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/nikon/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/nintendo/>
+{'url': 'https://www.jumia.com.eg/nintendo/'}
+2018-11-07 16:43:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/sony/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/electronics-av-receivers/>
+{'url': 'https://www.jumia.com.eg/electronics-av-receivers/'}
+2018-11-07 16:43:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/electronics-dvd-players/>
+{'url': 'https://www.jumia.com.eg/electronics-dvd-players/'}
+2018-11-07 16:43:44 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/home-livings/tank/> from <GET https://www.jumia.com.eg/tank/>
+2018-11-07 16:43:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/ata/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/nikon/>
+{'url': 'https://www.jumia.com.eg/nikon/'}
+2018-11-07 16:43:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/fujifilm/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/led-lcd-tvs/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/sony/>
+{'url': 'https://www.jumia.com.eg/sony/'}
+2018-11-07 16:43:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/ata/>
+{'url': 'https://www.jumia.com.eg/ata/'}
+2018-11-07 16:43:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/fujifilm/>
+{'url': 'https://www.jumia.com.eg/fujifilm/'}
+2018-11-07 16:43:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/media-tech/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/led-lcd-tvs/>
+{'url': 'https://www.jumia.com.eg/led-lcd-tvs/'}
+2018-11-07 16:43:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/sellers-you-trust/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/media-tech/>
+{'url': 'https://www.jumia.com.eg/media-tech/'}
+2018-11-07 16:43:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/konami/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/bomba/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/sellers-you-trust/>
+{'url': 'https://www.jumia.com.eg/sellers-you-trust/'}
+2018-11-07 16:43:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/patio-chair/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/konami/>
+{'url': 'https://www.jumia.com.eg/konami/'}
+2018-11-07 16:43:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/bomba/>
+{'url': 'https://www.jumia.com.eg/bomba/'}
+2018-11-07 16:43:44 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://tefal.jumia.com.eg/> from <GET https://www.jumia.com.eg/tefal/>
+2018-11-07 16:43:44 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/home-kitchen/tank/> from <GET https://www.jumia.com.eg/home-livings/tank/>
+2018-11-07 16:43:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/patio-chair/>
+{'url': 'https://www.jumia.com.eg/patio-chair/'}
+2018-11-07 16:43:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/lg/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/moulinex/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/zanussi/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/apple/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tefal.jumia.com.eg/robots.txt> (referer: None)
+2018-11-07 16:43:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/fresh/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/aldora/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/unionaire/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/rexona/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/lg/>
+{'url': 'https://www.jumia.com.eg/lg/'}
+2018-11-07 16:43:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/moulinex/>
+{'url': 'https://www.jumia.com.eg/moulinex/'}
+2018-11-07 16:43:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/axe/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/zanussi/>
+{'url': 'https://www.jumia.com.eg/zanussi/'}
+2018-11-07 16:43:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/apple/>
+{'url': 'https://www.jumia.com.eg/apple/'}
+2018-11-07 16:43:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/fresh/>
+{'url': 'https://www.jumia.com.eg/fresh/'}
+2018-11-07 16:43:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/aldora/>
+{'url': 'https://www.jumia.com.eg/aldora/'}
+2018-11-07 16:43:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/unionaire/>
+{'url': 'https://www.jumia.com.eg/unionaire/'}
+2018-11-07 16:43:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/rexona/>
+{'url': 'https://www.jumia.com.eg/rexona/'}
+2018-11-07 16:43:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/tornado/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/philips/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/axe/>
+{'url': 'https://www.jumia.com.eg/axe/'}
+2018-11-07 16:43:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/gillette/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/tornado/>
+{'url': 'https://www.jumia.com.eg/tornado/'}
+2018-11-07 16:43:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/philips/>
+{'url': 'https://www.jumia.com.eg/philips/'}
+2018-11-07 16:43:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/sharp/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/gillette/>
+{'url': 'https://www.jumia.com.eg/gillette/'}
+2018-11-07 16:43:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/sharp/>
+{'url': 'https://www.jumia.com.eg/sharp/'}
+2018-11-07 16:43:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/xiaomi/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/home-kitchen/tank/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tefal.jumia.com.eg/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/xiaomi/>
+{'url': 'https://www.jumia.com.eg/xiaomi/'}
+2018-11-07 16:43:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/andora/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/infinix/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/home-kitchen/tank/>
+{'url': 'https://www.jumia.com.eg/home-kitchen/tank/'}
+2018-11-07 16:43:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/flash-sale/?internal=HPTeaser1> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/town-team/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tefal.jumia.com.eg/>
+{'url': 'https://tefal.jumia.com.eg/'}
+2018-11-07 16:43:45 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/voucher-explosion/> from <GET https://www.jumia.com.eg/voucher-explosion/?internal=HPtop_teaser>
+2018-11-07 16:43:45 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/returns-refunds/> from <GET https://www.jumia.com.eg/online-return-cp/>
+2018-11-07 16:43:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/andora/>
+{'url': 'https://www.jumia.com.eg/andora/'}
+2018-11-07 16:43:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/toshiba/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/infinix/>
+{'url': 'https://www.jumia.com.eg/infinix/'}
+2018-11-07 16:43:45 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/vendor-page/> from <GET https://www.jumia.com.eg/vendor-page/?internal=homepage>
+2018-11-07 16:43:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/flash-sale/?internal=HPTeaser1>
+{'url': 'https://www.jumia.com.eg/flash-sale/?internal=HPTeaser1'}
+2018-11-07 16:43:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/town-team/>
+{'url': 'https://www.jumia.com.eg/town-team/'}
+2018-11-07 16:43:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/maybelline/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/cash-on-delivery/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/toshiba/>
+{'url': 'https://www.jumia.com.eg/toshiba/'}
+2018-11-07 16:43:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/win-fiat-cars/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/el-araby/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/j-one/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/maybelline/>
+{'url': 'https://www.jumia.com.eg/maybelline/'}
+2018-11-07 16:43:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/gseb-marketplace/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/cash-on-delivery/>
+{'url': 'https://www.jumia.com.eg/cash-on-delivery/'}
+2018-11-07 16:43:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/water-dispenser/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/win-fiat-cars/>
+{'url': 'https://www.jumia.com.eg/win-fiat-cars/'}
+2018-11-07 16:43:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/el-araby/>
+{'url': 'https://www.jumia.com.eg/el-araby/'}
+2018-11-07 16:43:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/home-office/bomba/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/black-friday/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/j-one/>
+{'url': 'https://www.jumia.com.eg/j-one/'}
+2018-11-07 16:43:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/braun/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/gseb-marketplace/>
+{'url': 'https://www.jumia.com.eg/gseb-marketplace/'}
+2018-11-07 16:43:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/voucher-explosion/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/customer/account/login/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/returns-refunds/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/water-dispenser/>
+{'url': 'https://www.jumia.com.eg/water-dispenser/'}
+2018-11-07 16:43:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/home-office/bomba/>
+{'url': 'https://www.jumia.com.eg/home-office/bomba/'}
+2018-11-07 16:43:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/black-friday/>
+{'url': 'https://www.jumia.com.eg/black-friday/'}
+2018-11-07 16:43:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/braun/>
+{'url': 'https://www.jumia.com.eg/braun/'}
+2018-11-07 16:43:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/voucher-explosion/>
+{'url': 'https://www.jumia.com.eg/voucher-explosion/'}
+2018-11-07 16:43:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/customer/account/login/>
+{'url': 'https://www.jumia.com.eg/customer/account/login/'}
+2018-11-07 16:43:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/returns-refunds/>
+{'url': 'https://www.jumia.com.eg/returns-refunds/'}
+2018-11-07 16:43:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/services/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/toys-games/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/cart/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/sporting-goods/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/pet-supplies/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/services/>
+{'url': 'https://www.jumia.com.eg/services/'}
+2018-11-07 16:43:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/toys-games/>
+{'url': 'https://www.jumia.com.eg/toys-games/'}
+2018-11-07 16:43:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/>
+{'url': 'https://www.jumia.com.eg/'}
+2018-11-07 16:43:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/cart/>
+{'url': 'https://www.jumia.com.eg/cart/'}
+2018-11-07 16:43:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/sporting-goods/>
+{'url': 'https://www.jumia.com.eg/sporting-goods/'}
+2018-11-07 16:43:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/pet-supplies/>
+{'url': 'https://www.jumia.com.eg/pet-supplies/'}
+2018-11-07 16:43:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/musical-instruments/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/industrial-scientific/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/musical-instruments/>
+{'url': 'https://www.jumia.com.eg/musical-instruments/'}
+2018-11-07 16:43:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/xbox-games/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/pc-gaming/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/playstation-games/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/industrial-scientific/>
+{'url': 'https://www.jumia.com.eg/industrial-scientific/'}
+2018-11-07 16:43:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/nintendo-gaming/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/xbox-games/>
+{'url': 'https://www.jumia.com.eg/xbox-games/'}
+2018-11-07 16:43:46 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/> from <GET https://www.jumia.com.eg/https:/one.jumia.com.eg/>
+2018-11-07 16:43:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/pc-gaming/>
+{'url': 'https://www.jumia.com.eg/pc-gaming/'}
+2018-11-07 16:43:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/patio-lawn-garden/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/playstation-games/>
+{'url': 'https://www.jumia.com.eg/playstation-games/'}
+2018-11-07 16:43:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/nintendo-gaming/>
+{'url': 'https://www.jumia.com.eg/nintendo-gaming/'}
+2018-11-07 16:43:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/digital-games/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/automobile-power-battery/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/patio-lawn-garden/>
+{'url': 'https://www.jumia.com.eg/patio-lawn-garden/'}
+2018-11-07 16:43:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/video-games/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/digital-games/>
+{'url': 'https://www.jumia.com.eg/digital-games/'}
+2018-11-07 16:43:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/automobile-power-battery/>
+{'url': 'https://www.jumia.com.eg/automobile-power-battery/'}
+2018-11-07 16:43:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/home-office/zanussi/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/video-games/>
+{'url': 'https://www.jumia.com.eg/video-games/'}
+2018-11-07 16:43:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/home-office/zanussi/>
+{'url': 'https://www.jumia.com.eg/home-office/zanussi/'}
+2018-11-07 16:43:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/automobile-lights-lighting-accessories/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/car-electronics/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/automobile-exterior-towing-products-winches/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/motorcycle-powersports/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/automobile-interior-accessories/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/books-movies-music/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/car-electronics-accessories/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/automobile-lights-lighting-accessories/>
+{'url': 'https://www.jumia.com.eg/automobile-lights-lighting-accessories/'}
+2018-11-07 16:43:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/car-electronics/>
+{'url': 'https://www.jumia.com.eg/car-electronics/'}
+2018-11-07 16:43:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/automobile-exterior-towing-products-winches/>
+{'url': 'https://www.jumia.com.eg/automobile-exterior-towing-products-winches/'}
+2018-11-07 16:43:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/motorcycle-powersports/>
+{'url': 'https://www.jumia.com.eg/motorcycle-powersports/'}
+2018-11-07 16:43:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/automobile-interior-accessories/>
+{'url': 'https://www.jumia.com.eg/automobile-interior-accessories/'}
+2018-11-07 16:43:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/books-movies-music/>
+{'url': 'https://www.jumia.com.eg/books-movies-music/'}
+2018-11-07 16:43:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/car-exterior-care/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/car-tools-equipment/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/car-electronics-accessories/>
+{'url': 'https://www.jumia.com.eg/car-electronics-accessories/'}
+2018-11-07 16:43:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/car-care/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/car-exterior-care/>
+{'url': 'https://www.jumia.com.eg/car-exterior-care/'}
+2018-11-07 16:43:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/automobile-exterior-covers/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/car-tools-equipment/>
+{'url': 'https://www.jumia.com.eg/car-tools-equipment/'}
+2018-11-07 16:43:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/car-care/>
+{'url': 'https://www.jumia.com.eg/car-care/'}
+2018-11-07 16:43:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/car-glass-care/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/automobile-exterior-covers/>
+{'url': 'https://www.jumia.com.eg/automobile-exterior-covers/'}
+2018-11-07 16:43:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/beans/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/grocery-rice/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/car-interior-care/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/household-laundry-supplies/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/air-fresheners-d/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/car-glass-care/>
+{'url': 'https://www.jumia.com.eg/car-glass-care/'}
+2018-11-07 16:43:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/household-supplies/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/beans/>
+{'url': 'https://www.jumia.com.eg/beans/'}
+2018-11-07 16:43:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/grocery-rice/>
+{'url': 'https://www.jumia.com.eg/grocery-rice/'}
+2018-11-07 16:43:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/car-interior-care/>
+{'url': 'https://www.jumia.com.eg/car-interior-care/'}
+2018-11-07 16:43:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/herbs-spices-seasonings/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/jams-jellies-sweet-spread/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/cooking-ingredients/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/household-laundry-supplies/>
+{'url': 'https://www.jumia.com.eg/household-laundry-supplies/'}
+2018-11-07 16:43:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/air-fresheners-d/>
+{'url': 'https://www.jumia.com.eg/air-fresheners-d/'}
+2018-11-07 16:43:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/crisps-snacks-nuts/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/household-supplies/>
+{'url': 'https://www.jumia.com.eg/household-supplies/'}
+2018-11-07 16:43:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/dried-beans-grains-rice/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/single-herbs-spices/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/herbs-spices-seasonings/>
+{'url': 'https://www.jumia.com.eg/herbs-spices-seasonings/'}
+2018-11-07 16:43:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/jams-jellies-sweet-spread/>
+{'url': 'https://www.jumia.com.eg/jams-jellies-sweet-spread/'}
+2018-11-07 16:43:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/cooking-ingredients/>
+{'url': 'https://www.jumia.com.eg/cooking-ingredients/'}
+2018-11-07 16:43:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/hot-beverages-coffee-tea-cocoa/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/baby-car-seats-stroller-toys/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/automobile/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/crisps-snacks-nuts/>
+{'url': 'https://www.jumia.com.eg/crisps-snacks-nuts/'}
+2018-11-07 16:43:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/bottled-beverages-water-drink-mixes/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/dried-beans-grains-rice/>
+{'url': 'https://www.jumia.com.eg/dried-beans-grains-rice/'}
+2018-11-07 16:43:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/single-herbs-spices/>
+{'url': 'https://www.jumia.com.eg/single-herbs-spices/'}
+2018-11-07 16:43:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/baby-toddler-toys/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/hot-beverages-coffee-tea-cocoa/>
+{'url': 'https://www.jumia.com.eg/hot-beverages-coffee-tea-cocoa/'}
+2018-11-07 16:43:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/baby-car-seats-stroller-toys/>
+{'url': 'https://www.jumia.com.eg/baby-car-seats-stroller-toys/'}
+2018-11-07 16:43:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/automobile/>
+{'url': 'https://www.jumia.com.eg/automobile/'}
+2018-11-07 16:43:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/food-cupboard-supplies/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/bottled-beverages-water-drink-mixes/>
+{'url': 'https://www.jumia.com.eg/bottled-beverages-water-drink-mixes/'}
+2018-11-07 16:43:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/beverages/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/baby-toddler-toys/>
+{'url': 'https://www.jumia.com.eg/baby-toddler-toys/'}
+2018-11-07 16:43:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/baby-swing-jumpers-bouncers/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/baby-strollers/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/food-cupboard-supplies/>
+{'url': 'https://www.jumia.com.eg/food-cupboard-supplies/'}
+2018-11-07 16:43:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/beverages/>
+{'url': 'https://www.jumia.com.eg/beverages/'}
+2018-11-07 16:43:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/baby-swing-jumpers-bouncers/>
+{'url': 'https://www.jumia.com.eg/baby-swing-jumpers-bouncers/'}
+2018-11-07 16:43:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/baby-strollers/>
+{'url': 'https://www.jumia.com.eg/baby-strollers/'}
+2018-11-07 16:43:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/cribs/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/groceries/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/walkers-strollers/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/baby-nursery/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/cribs/>
+{'url': 'https://www.jumia.com.eg/cribs/'}
+2018-11-07 16:43:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/groceries/>
+{'url': 'https://www.jumia.com.eg/groceries/'}
+2018-11-07 16:43:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/baby-gear-products/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/baby-nursery-decor/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/walkers-strollers/>
+{'url': 'https://www.jumia.com.eg/walkers-strollers/'}
+2018-11-07 16:43:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/baby-nursery/>
+{'url': 'https://www.jumia.com.eg/baby-nursery/'}
+2018-11-07 16:43:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/baby-feeding-foods/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/baby-strollers-accessories/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/baby-feeding-products/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/baby-gear-products/>
+{'url': 'https://www.jumia.com.eg/baby-gear-products/'}
+2018-11-07 16:43:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/baby-nursery-decor/>
+{'url': 'https://www.jumia.com.eg/baby-nursery-decor/'}
+2018-11-07 16:43:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/baby-feeding-foods/>
+{'url': 'https://www.jumia.com.eg/baby-feeding-foods/'}
+2018-11-07 16:43:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/baby-safety-monitors/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/baby-kitchen-safety/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/baby-strollers-accessories-d/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/baby-strollers-accessories/>
+{'url': 'https://www.jumia.com.eg/baby-strollers-accessories/'}
+2018-11-07 16:43:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/baby-bottle-feeding/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/baby-safety-products/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/baby-feeding-products/>
+{'url': 'https://www.jumia.com.eg/baby-feeding-products/'}
+2018-11-07 16:43:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/baby-safety-monitors/>
+{'url': 'https://www.jumia.com.eg/baby-safety-monitors/'}
+2018-11-07 16:43:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/baby-kitchen-safety/>
+{'url': 'https://www.jumia.com.eg/baby-kitchen-safety/'}
+2018-11-07 16:43:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/baby-changing-table-pads-covers/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/baby-safety-edge-corner-guards/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/baby-strollers-accessories-d/>
+{'url': 'https://www.jumia.com.eg/baby-strollers-accessories-d/'}
+2018-11-07 16:43:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/baby-bottle-feeding/>
+{'url': 'https://www.jumia.com.eg/baby-bottle-feeding/'}
+2018-11-07 16:43:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/baby-diaper-bags/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/baby-safety-products/>
+{'url': 'https://www.jumia.com.eg/baby-safety-products/'}
+2018-11-07 16:43:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/softwares/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/baby-wipe-holders-warmers/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/baby-changing-table-pads-covers/>
+{'url': 'https://www.jumia.com.eg/baby-changing-table-pads-covers/'}
+2018-11-07 16:43:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/baby-safety-edge-corner-guards/>
+{'url': 'https://www.jumia.com.eg/baby-safety-edge-corner-guards/'}
+2018-11-07 16:43:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/baby-diaper-bags/>
+{'url': 'https://www.jumia.com.eg/baby-diaper-bags/'}
+2018-11-07 16:43:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/softwares/>
+{'url': 'https://www.jumia.com.eg/softwares/'}
+2018-11-07 16:43:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/computing-audio-video-accessories/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/printers/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/computer-accessories/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/baby-bibs-burp-cloths/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/baby-wipe-holders-warmers/>
+{'url': 'https://www.jumia.com.eg/baby-wipe-holders-warmers/'}
+2018-11-07 16:43:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/baby-diapering/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/computing-audio-video-accessories/>
+{'url': 'https://www.jumia.com.eg/computing-audio-video-accessories/'}
+2018-11-07 16:43:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/printers/>
+{'url': 'https://www.jumia.com.eg/printers/'}
+2018-11-07 16:43:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/computer-data-storage/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/computer-accessories/>
+{'url': 'https://www.jumia.com.eg/computer-accessories/'}
+2018-11-07 16:43:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/baby-bibs-burp-cloths/>
+{'url': 'https://www.jumia.com.eg/baby-bibs-burp-cloths/'}
+2018-11-07 16:43:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/baby-diapering/>
+{'url': 'https://www.jumia.com.eg/baby-diapering/'}
+2018-11-07 16:43:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/computers-tablets/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/printer-ink-toner/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/watches-sunglasses/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/computer-data-storage/>
+{'url': 'https://www.jumia.com.eg/computer-data-storage/'}
+2018-11-07 16:43:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/monitors/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/computing/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/computers-tablets/>
+{'url': 'https://www.jumia.com.eg/computers-tablets/'}
+2018-11-07 16:43:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/baby-girl-fashion/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/printer-ink-toner/>
+{'url': 'https://www.jumia.com.eg/printer-ink-toner/'}
+2018-11-07 16:43:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/watches-sunglasses/>
+{'url': 'https://www.jumia.com.eg/watches-sunglasses/'}
+2018-11-07 16:43:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/baby-products/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/monitors/>
+{'url': 'https://www.jumia.com.eg/monitors/'}
+2018-11-07 16:43:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/computing/>
+{'url': 'https://www.jumia.com.eg/computing/'}
+2018-11-07 16:43:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/teen-girls-fashion/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/baby-girl-fashion/>
+{'url': 'https://www.jumia.com.eg/baby-girl-fashion/'}
+2018-11-07 16:43:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/boys-fashion/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/baby-products/>
+{'url': 'https://www.jumia.com.eg/baby-products/'}
+2018-11-07 16:43:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/womens-bags/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/teen-girls-fashion/>
+{'url': 'https://www.jumia.com.eg/teen-girls-fashion/'}
+2018-11-07 16:43:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/boys-fashion/>
+{'url': 'https://www.jumia.com.eg/boys-fashion/'}
+2018-11-07 16:43:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/womens-bags/>
+{'url': 'https://www.jumia.com.eg/womens-bags/'}
+2018-11-07 16:43:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/womens-clothing/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/womens-clothing/>
+{'url': 'https://www.jumia.com.eg/womens-clothing/'}
+2018-11-07 16:43:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/baby-boys-fashion-d/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/computing-accessories/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/baby-boys-fashion-d/>
+{'url': 'https://www.jumia.com.eg/baby-boys-fashion-d/'}
+2018-11-07 16:43:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/computing-accessories/>
+{'url': 'https://www.jumia.com.eg/computing-accessories/'}
+2018-11-07 16:43:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/babies-clothing/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/men-clothing/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/womens-fashion-accessories/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/kids-fashion/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/womens-shoes/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/babies-clothing/>
+{'url': 'https://www.jumia.com.eg/babies-clothing/'}
+2018-11-07 16:43:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/men-clothing/>
+{'url': 'https://www.jumia.com.eg/men-clothing/'}
+2018-11-07 16:43:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/womens-fashion-accessories/>
+{'url': 'https://www.jumia.com.eg/womens-fashion-accessories/'}
+2018-11-07 16:43:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/kids-fashion/>
+{'url': 'https://www.jumia.com.eg/kids-fashion/'}
+2018-11-07 16:43:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/womens-shoes/>
+{'url': 'https://www.jumia.com.eg/womens-shoes/'}
+2018-11-07 16:43:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/teeth-whitening/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/mouthwash/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/category-fashion-by-jumia/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/toothpaste/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/mens-fashion-accessories/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/teeth-whitening/>
+{'url': 'https://www.jumia.com.eg/teeth-whitening/'}
+2018-11-07 16:43:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/oral-care/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/mouthwash/>
+{'url': 'https://www.jumia.com.eg/mouthwash/'}
+2018-11-07 16:43:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/womens-fashion/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/category-fashion-by-jumia/>
+{'url': 'https://www.jumia.com.eg/category-fashion-by-jumia/'}
+2018-11-07 16:43:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/toothpaste/>
+{'url': 'https://www.jumia.com.eg/toothpaste/'}
+2018-11-07 16:43:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/mens-fashion-accessories/>
+{'url': 'https://www.jumia.com.eg/mens-fashion-accessories/'}
+2018-11-07 16:43:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/mens-shoes/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/oral-care/>
+{'url': 'https://www.jumia.com.eg/oral-care/'}
+2018-11-07 16:43:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/medications-treatments/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/womens-fashion/>
+{'url': 'https://www.jumia.com.eg/womens-fashion/'}
+2018-11-07 16:43:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/vision-care-prescription-contact-lenses/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/health-first-aid/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/feminine-hygiene/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/mens-shoes/>
+{'url': 'https://www.jumia.com.eg/mens-shoes/'}
+2018-11-07 16:43:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/medications-treatments/>
+{'url': 'https://www.jumia.com.eg/medications-treatments/'}
+2018-11-07 16:43:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/health-care/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/vision-care-prescription-contact-lenses/>
+{'url': 'https://www.jumia.com.eg/vision-care-prescription-contact-lenses/'}
+2018-11-07 16:43:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/health-first-aid/>
+{'url': 'https://www.jumia.com.eg/health-first-aid/'}
+2018-11-07 16:43:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/feminine-hygiene/>
+{'url': 'https://www.jumia.com.eg/feminine-hygiene/'}
+2018-11-07 16:43:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/wellness-relaxation/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/health-monitors/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/medical-supplies-equipment/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/fertility-sexual-wellness/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/vision-care/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/styling-products-deodorant-antiperspirants/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/health-care/>
+{'url': 'https://www.jumia.com.eg/health-care/'}
+2018-11-07 16:43:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/wellness-relaxation/>
+{'url': 'https://www.jumia.com.eg/wellness-relaxation/'}
+2018-11-07 16:43:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/massage-tools-equipment/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/health-monitors/>
+{'url': 'https://www.jumia.com.eg/health-monitors/'}
+2018-11-07 16:43:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/medical-supplies-equipment/>
+{'url': 'https://www.jumia.com.eg/medical-supplies-equipment/'}
+2018-11-07 16:43:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/fertility-sexual-wellness/>
+{'url': 'https://www.jumia.com.eg/fertility-sexual-wellness/'}
+2018-11-07 16:43:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/vision-care/>
+{'url': 'https://www.jumia.com.eg/vision-care/'}
+2018-11-07 16:43:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/styling-products-deodorant-antiperspirants/>
+{'url': 'https://www.jumia.com.eg/styling-products-deodorant-antiperspirants/'}
+2018-11-07 16:43:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/massage-tools-equipment/>
+{'url': 'https://www.jumia.com.eg/massage-tools-equipment/'}
+2018-11-07 16:43:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/fragrances-allgenders/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/beauty-tools-accessories/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/beauty-styling-products/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/fragrances-allgenders/>
+{'url': 'https://www.jumia.com.eg/fragrances-allgenders/'}
+2018-11-07 16:43:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/beauty-tools-accessories/>
+{'url': 'https://www.jumia.com.eg/beauty-tools-accessories/'}
+2018-11-07 16:43:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/mens-fashion/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/beauty-styling-products/>
+{'url': 'https://www.jumia.com.eg/beauty-styling-products/'}
+2018-11-07 16:43:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/skin-care-prducts/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/air-conditioning/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/water-heaters-parts/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/styling-products-shave-hair-removal/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/health-beauty/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/mens-fashion/>
+{'url': 'https://www.jumia.com.eg/mens-fashion/'}
+2018-11-07 16:43:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/appliances-washers-dryers/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/skin-care-prducts/>
+{'url': 'https://www.jumia.com.eg/skin-care-prducts/'}
+2018-11-07 16:43:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/air-conditioning/>
+{'url': 'https://www.jumia.com.eg/air-conditioning/'}
+2018-11-07 16:43:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/appliances-fridges-freezers/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/water-heaters-parts/>
+{'url': 'https://www.jumia.com.eg/water-heaters-parts/'}
+2018-11-07 16:43:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/styling-products-shave-hair-removal/>
+{'url': 'https://www.jumia.com.eg/styling-products-shave-hair-removal/'}
+2018-11-07 16:43:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/health-beauty/>
+{'url': 'https://www.jumia.com.eg/health-beauty/'}
+2018-11-07 16:43:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/ironing-laundry/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/blenders/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/appliances-washers-dryers/>
+{'url': 'https://www.jumia.com.eg/appliances-washers-dryers/'}
+2018-11-07 16:43:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/appliances-fridges-freezers/>
+{'url': 'https://www.jumia.com.eg/appliances-fridges-freezers/'}
+2018-11-07 16:43:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/ironing-laundry/>
+{'url': 'https://www.jumia.com.eg/ironing-laundry/'}
+2018-11-07 16:43:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/blenders/>
+{'url': 'https://www.jumia.com.eg/blenders/'}
+2018-11-07 16:43:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/womens-make-up/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/space-heaters/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/small-appliances-microwave/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/food-processors/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/cooking-appliances/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/womens-make-up/>
+{'url': 'https://www.jumia.com.eg/womens-make-up/'}
+2018-11-07 16:43:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/space-heaters/>
+{'url': 'https://www.jumia.com.eg/space-heaters/'}
+2018-11-07 16:43:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/small-appliances-microwave/>
+{'url': 'https://www.jumia.com.eg/small-appliances-microwave/'}
+2018-11-07 16:43:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/office-school-supplies/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/food-processors/>
+{'url': 'https://www.jumia.com.eg/food-processors/'}
+2018-11-07 16:43:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/office-products/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/cooking-appliances/>
+{'url': 'https://www.jumia.com.eg/cooking-appliances/'}
+2018-11-07 16:43:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/tools-building-supplies/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/office-school-supplies/>
+{'url': 'https://www.jumia.com.eg/office-school-supplies/'}
+2018-11-07 16:43:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/office-products/>
+{'url': 'https://www.jumia.com.eg/office-products/'}
+2018-11-07 16:43:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/vacuum-cleaners/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/tools-building-supplies/>
+{'url': 'https://www.jumia.com.eg/tools-building-supplies/'}
+2018-11-07 16:43:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/small-appliances/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/office-electronics/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/vacuum-cleaners/>
+{'url': 'https://www.jumia.com.eg/vacuum-cleaners/'}
+2018-11-07 16:43:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/small-appliances/>
+{'url': 'https://www.jumia.com.eg/small-appliances/'}
+2018-11-07 16:43:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/office-electronics/>
+{'url': 'https://www.jumia.com.eg/office-electronics/'}
+2018-11-07 16:43:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/home-furniture-d/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/household-fans/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/home-furniture-d/>
+{'url': 'https://www.jumia.com.eg/home-furniture-d/'}
+2018-11-07 16:43:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/household-fans/>
+{'url': 'https://www.jumia.com.eg/household-fans/'}
+2018-11-07 16:43:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/storage-organization-home-office/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/personal-care-d/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/home-lighting/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/storage-organization-home-office/>
+{'url': 'https://www.jumia.com.eg/storage-organization-home-office/'}
+2018-11-07 16:43:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/personal-care-d/>
+{'url': 'https://www.jumia.com.eg/personal-care-d/'}
+2018-11-07 16:43:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/event-party-supplies/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/sewing-arts-crafts/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/home-lighting/>
+{'url': 'https://www.jumia.com.eg/home-lighting/'}
+2018-11-07 16:43:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/tools-home-improvement/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/event-party-supplies/>
+{'url': 'https://www.jumia.com.eg/event-party-supplies/'}
+2018-11-07 16:43:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/sewing-arts-crafts/>
+{'url': 'https://www.jumia.com.eg/sewing-arts-crafts/'}
+2018-11-07 16:43:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/home-decor/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/bedding/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/tools-home-improvement/>
+{'url': 'https://www.jumia.com.eg/tools-home-improvement/'}
+2018-11-07 16:43:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/arts-crafts-sewing/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/home-furniture/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/home-kitchen-dining/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/home-decor/>
+{'url': 'https://www.jumia.com.eg/home-decor/'}
+2018-11-07 16:43:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/home-improvement-electrical-tools/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/floor-care/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/bedding/>
+{'url': 'https://www.jumia.com.eg/bedding/'}
+2018-11-07 16:43:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/arts-crafts-sewing/>
+{'url': 'https://www.jumia.com.eg/arts-crafts-sewing/'}
+2018-11-07 16:43:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/home-furniture/>
+{'url': 'https://www.jumia.com.eg/home-furniture/'}
+2018-11-07 16:43:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/home-kitchen-dining/>
+{'url': 'https://www.jumia.com.eg/home-kitchen-dining/'}
+2018-11-07 16:43:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/home-cleaning-supplies/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/home-improvement-electrical-tools/>
+{'url': 'https://www.jumia.com.eg/home-improvement-electrical-tools/'}
+2018-11-07 16:43:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/floor-care/>
+{'url': 'https://www.jumia.com.eg/floor-care/'}
+2018-11-07 16:43:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/wall-art/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/home-office/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/home-cleaning-supplies/>
+{'url': 'https://www.jumia.com.eg/home-cleaning-supplies/'}
+2018-11-07 16:43:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/wall-art/>
+{'url': 'https://www.jumia.com.eg/wall-art/'}
+2018-11-07 16:43:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/home-office/>
+{'url': 'https://www.jumia.com.eg/home-office/'}
+2018-11-07 16:43:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/security-surveillance/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/office-electronic-organizers-fax-machines/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/small-appliances-ironing-laundry/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/bath/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/heating-cooling-air-quality/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/security-biometrics/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/security-surveillance/>
+{'url': 'https://www.jumia.com.eg/security-surveillance/'}
+2018-11-07 16:43:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/office-electronic-organizers-fax-machines/>
+{'url': 'https://www.jumia.com.eg/office-electronic-organizers-fax-machines/'}
+2018-11-07 16:43:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/office-electronics-office-copiers/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/office-electronics-stationery/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/small-appliances-ironing-laundry/>
+{'url': 'https://www.jumia.com.eg/small-appliances-ironing-laundry/'}
+2018-11-07 16:43:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/bath/>
+{'url': 'https://www.jumia.com.eg/bath/'}
+2018-11-07 16:43:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/heating-cooling-air-quality/>
+{'url': 'https://www.jumia.com.eg/heating-cooling-air-quality/'}
+2018-11-07 16:43:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/security-biometrics/>
+{'url': 'https://www.jumia.com.eg/security-biometrics/'}
+2018-11-07 16:43:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/home-theatre/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/home-audio-electronics/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/video-equipments/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/office-electronics-office-copiers/>
+{'url': 'https://www.jumia.com.eg/office-electronics-office-copiers/'}
+2018-11-07 16:43:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/office-electronics-stationery/>
+{'url': 'https://www.jumia.com.eg/office-electronics-stationery/'}
+2018-11-07 16:43:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/lighting-ceiling-fans/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/digital-cameras/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/home-audio-speakers-speakers/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/photo-projectors/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/home-theatre/>
+{'url': 'https://www.jumia.com.eg/home-theatre/'}
+2018-11-07 16:43:54 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/> from <GET https://www.jumia.com.eg/digital-terrestrial-receivers/>
+2018-11-07 16:43:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/home-audio-electronics/>
+{'url': 'https://www.jumia.com.eg/home-audio-electronics/'}
+2018-11-07 16:43:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/video-equipments/>
+{'url': 'https://www.jumia.com.eg/video-equipments/'}
+2018-11-07 16:43:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/electronics-camera-photo/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/lighting-ceiling-fans/>
+{'url': 'https://www.jumia.com.eg/lighting-ceiling-fans/'}
+2018-11-07 16:43:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/digital-cameras/>
+{'url': 'https://www.jumia.com.eg/digital-cameras/'}
+2018-11-07 16:43:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/electronics-satellite-television/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/home-audio-speakers-speakers/>
+{'url': 'https://www.jumia.com.eg/home-audio-speakers-speakers/'}
+2018-11-07 16:43:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/photo-projectors/>
+{'url': 'https://www.jumia.com.eg/photo-projectors/'}
+2018-11-07 16:43:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/televisions/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/electronics-camera-photo/>
+{'url': 'https://www.jumia.com.eg/electronics-camera-photo/'}
+2018-11-07 16:43:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/electronics-satellite-television/>
+{'url': 'https://www.jumia.com.eg/electronics-satellite-television/'}
+2018-11-07 16:43:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/electronic-television-video/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/dvd-players-recorders/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/tablet-keyboard-cases/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/home-kitchen/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/televisions/>
+{'url': 'https://www.jumia.com.eg/televisions/'}
+2018-11-07 16:43:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/electronic-television-video/>
+{'url': 'https://www.jumia.com.eg/electronic-television-video/'}
+2018-11-07 16:43:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/dvd-players-recorders/>
+{'url': 'https://www.jumia.com.eg/dvd-players-recorders/'}
+2018-11-07 16:43:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/tablet-keyboard-cases/>
+{'url': 'https://www.jumia.com.eg/tablet-keyboard-cases/'}
+2018-11-07 16:43:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/landline-phones/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/home-kitchen/>
+{'url': 'https://www.jumia.com.eg/home-kitchen/'}
+2018-11-07 16:43:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/landline-phones/>
+{'url': 'https://www.jumia.com.eg/landline-phones/'}
+2018-11-07 16:43:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/mobile-phone-bluetooth-headsets/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/telephones-accessories/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/tablets-accessories/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/mobile-phone-bluetooth-headsets/>
+{'url': 'https://www.jumia.com.eg/mobile-phone-bluetooth-headsets/'}
+2018-11-07 16:43:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/telephones-accessories/>
+{'url': 'https://www.jumia.com.eg/telephones-accessories/'}
+2018-11-07 16:43:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/tablet-accessories/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/mobile-phone-batteries-battery-packs/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/tablets-accessories/>
+{'url': 'https://www.jumia.com.eg/tablets-accessories/'}
+2018-11-07 16:43:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/smart-watches/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/mobile-phone-screen-protectors/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/tablet-accessories/>
+{'url': 'https://www.jumia.com.eg/tablet-accessories/'}
+2018-11-07 16:43:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/mobile-phone-batteries-battery-packs/>
+{'url': 'https://www.jumia.com.eg/mobile-phone-batteries-battery-packs/'}
+2018-11-07 16:43:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/smart-watches/>
+{'url': 'https://www.jumia.com.eg/smart-watches/'}
+2018-11-07 16:43:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/tablets/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/ipads/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/smartphones/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/mobile-phone-screen-protectors/>
+{'url': 'https://www.jumia.com.eg/mobile-phone-screen-protectors/'}
+2018-11-07 16:43:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/electronics/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/tablets/>
+{'url': 'https://www.jumia.com.eg/tablets/'}
+2018-11-07 16:43:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/mobile-phone-cases-covers/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/other-tablets/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:55 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/computing/> from <GET https://www.jumia.com.eg/computing/?internal=fm-global&shipped_from=jumia_global>
+2018-11-07 16:43:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/ipads/>
+{'url': 'https://www.jumia.com.eg/ipads/'}
+2018-11-07 16:43:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/smartphones/>
+{'url': 'https://www.jumia.com.eg/smartphones/'}
+2018-11-07 16:43:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/electronics/>
+{'url': 'https://www.jumia.com.eg/electronics/'}
+2018-11-07 16:43:55 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.jumia.com.eg/phones-tablets/> from <GET https://www.jumia.com.eg/phones-tablets/?internal=fm-global&shipped_from=jumia_global>
+2018-11-07 16:43:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/phones-tablets/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/mobile-phone-cases-covers/>
+{'url': 'https://www.jumia.com.eg/mobile-phone-cases-covers/'}
+2018-11-07 16:43:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/other-tablets/>
+{'url': 'https://www.jumia.com.eg/other-tablets/'}
+2018-11-07 16:43:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/cell-phones/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/phones-tablets/>
+{'url': 'https://www.jumia.com.eg/phones-tablets/'}
+2018-11-07 16:43:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/cell-phones/>
+{'url': 'https://www.jumia.com.eg/cell-phones/'}
+2018-11-07 16:43:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/mobile-phones/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/mobile-phones/>
+{'url': 'https://www.jumia.com.eg/mobile-phones/'}
+2018-11-07 16:43:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jumia.com.eg/mobile-accessories/> (referer: https://www.jumia.com.eg/)
+2018-11-07 16:43:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.jumia.com.eg/mobile-accessories/>
+{'url': 'https://www.jumia.com.eg/mobile-accessories/'}
+2018-11-07 16:43:55 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-11-07 16:43:55 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 296438,
+ 'downloader/request_count': 566,
+ 'downloader/request_method_count/GET': 566,
+ 'downloader/response_bytes': 26087419,
+ 'downloader/response_count': 566,
+ 'downloader/response_status_count/200': 437,
+ 'downloader/response_status_count/301': 124,
+ 'downloader/response_status_count/302': 3,
+ 'downloader/response_status_count/404': 2,
+ 'dupefilter/filtered': 54,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 11, 7, 16, 43, 55, 686040),
+ 'httperror/response_ignored_count': 2,
+ 'httperror/response_ignored_status_count/404': 2,
+ 'item_scraped_count': 432,
+ 'log_count/DEBUG': 1026,
+ 'log_count/INFO': 9,
+ 'memusage/max': 67981312,
+ 'memusage/startup': 67981312,
+ 'offsite/domains': 26,
+ 'offsite/filtered': 28,
+ 'request_depth_max': 1,
+ 'response_received_count': 439,
+ 'scheduler/dequeued': 562,
+ 'scheduler/dequeued/memory': 562,
+ 'scheduler/enqueued': 562,
+ 'scheduler/enqueued/memory': 562,
+ 'start_time': datetime.datetime(2018, 11, 7, 16, 43, 32, 355270)}
+2018-11-07 16:43:55 [scrapy.core.engine] INFO: Spider closed (finished)
