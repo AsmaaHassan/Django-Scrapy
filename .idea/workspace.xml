@@ -66,19 +66,8 @@
       <change beforePath="$PROJECT_DIR$/../manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../manage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../requirements.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/onlineshopping/celerybeat-schedule" beforeDir="false" afterPath="$PROJECT_DIR$/onlineshopping/celerybeat-schedule" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/onlineshopping/main/crawl.py" beforeDir="false" afterPath="$PROJECT_DIR$/onlineshopping/main/crawl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/onlineshopping/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/onlineshopping/main/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/onlineshopping/main/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/onlineshopping/main/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/onlineshopping/main/tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/onlineshopping/main/tasks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/onlineshopping/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/onlineshopping/main/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/onlineshopping/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/onlineshopping/main/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/onlineshopping/onlineshopping/celery.py" beforeDir="false" afterPath="$PROJECT_DIR$/onlineshopping/onlineshopping/celery.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/onlineshopping/onlineshopping/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/onlineshopping/onlineshopping/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/onlineshopping/onlineshopping/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/onlineshopping/onlineshopping/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/onlineshopping/scrapy_app/scrapy_app/spiders/jumiaSpider.py" beforeDir="false" afterPath="$PROJECT_DIR$/onlineshopping/scrapy_app/scrapy_app/spiders/jumiaSpider.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/onlineshopping/scrapy_app/scrapy_app/spiders/souqSpider.py" beforeDir="false" afterPath="$PROJECT_DIR$/onlineshopping/scrapy_app/scrapy_app/spiders/souqSpider.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../static/css/approval_report.css" beforeDir="false" afterPath="$PROJECT_DIR$/../static/css/approval_report.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../static/css/batch_report.css" beforeDir="false" afterPath="$PROJECT_DIR$/../static/css/batch_report.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../utilities/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/../utilities/admin.py" afterDir="false" />
@@ -98,18 +87,19 @@
     <session id="-2003634532">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.44" value="1" />
           <entry key="project.open.time.48" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.97" value="1" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -120,7 +110,7 @@
           <entry key="html" value="2" />
           <entry key="md" value="2" />
           <entry key="pid" value="1" />
-          <entry key="py" value="99" />
+          <entry key="py" value="105" />
           <entry key="txt" value="7" />
         </counts>
       </usages-collector>
@@ -130,7 +120,7 @@
           <entry key="Ini" value="4" />
           <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="12" />
-          <entry key="Python" value="99" />
+          <entry key="Python" value="105" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -138,7 +128,7 @@
           <entry key="Python Console" value="56" />
           <entry key="dummy" value="19" />
           <entry key="md" value="36" />
-          <entry key="py" value="4363" />
+          <entry key="py" value="4467" />
           <entry key="txt" value="5" />
         </counts>
       </usages-collector>
@@ -146,48 +136,30 @@
         <counts>
           <entry key="Markdown" value="36" />
           <entry key="PLAIN_TEXT" value="24" />
-          <entry key="Python" value="4419" />
+          <entry key="Python" value="4523" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/onlineshopping/scrapy_app/scrapy_app/spiders/jumiaSpider.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/onlineshopping/main/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/onlineshopping/main/crawl.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/onlineshopping/scrapy_app/scrapy_app/spiders/souqSpider.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/onlineshopping/onlineshopping/celery.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="167">
+              <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
               <folding>
-                <element signature="e#0#56#0" expanded="true" />
+                <element signature="e#0#45#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/onlineshopping/main/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="10" column="68" lean-forward="true" selection-start-line="10" selection-start-column="68" selection-end-line="10" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -195,47 +167,37 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/onlineshopping/main/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state>
+              <caret column="16" selection-start-column="16" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/onlineshopping/onlineshopping/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="167">
+              <caret line="240" column="1" selection-start-line="240" selection-start-column="1" selection-end-line="240" selection-end-column="1" />
               <folding>
-                <element signature="e#0#41#0" expanded="true" />
+                <element signature="e#314#352#0" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/onlineshopping/manage.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/onlineshopping/main/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+            <state relative-caret-position="45">
+              <caret line="3" column="56" lean-forward="true" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/onlineshopping/main/tasks.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="150">
-                <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-              </first_editor>
-              <second_editor />
             </state>
           </provider>
         </entry>
@@ -251,7 +213,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>filter</find>
       <find>midd</find>
       <find>insta</find>
       <find>onlineshopping</find>
@@ -281,6 +242,7 @@
       <find>Rule</find>
       <find>SouqSpiderSpider</find>
       <find>print</find>
+      <find>swag</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/onlineshopping/scrapy_app</dir>
@@ -302,18 +264,18 @@
         <option value="$PROJECT_DIR$/onlineshopping/scrapy_app/scrapy_app/pipelines.py" />
         <option value="$PROJECT_DIR$/onlineshopping/scrapy_app/scrapy_app/settings.py" />
         <option value="$PROJECT_DIR$/onlineshopping/scrapy_app/crawl.py" />
-        <option value="$PROJECT_DIR$/onlineshopping/onlineshopping/settings.py" />
         <option value="$PROJECT_DIR$/onlineshopping/main/urls.py" />
         <option value="$PROJECT_DIR$/onlineshopping/onlineshopping/urls.py" />
-        <option value="$PROJECT_DIR$/onlineshopping/main/views.py" />
-        <option value="$PROJECT_DIR$/onlineshopping/main/serializers.py" />
-        <option value="$PROJECT_DIR$/onlineshopping/main/models.py" />
         <option value="$PROJECT_DIR$/onlineshopping/scrapy_app/scrapy_app/spiders/jumiaSpider.py" />
         <option value="$PROJECT_DIR$/onlineshopping/scrapy_app/scrapy_app/spiders/souqSpider.py" />
         <option value="$PROJECT_DIR$/onlineshopping/main/crawl.py" />
         <option value="$PROJECT_DIR$/onlineshopping/main/tasks.py" />
         <option value="$PROJECT_DIR$/onlineshopping/onlineshopping/celery.py" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/onlineshopping/onlineshopping/settings.py" />
+        <option value="$PROJECT_DIR$/onlineshopping/main/serializers.py" />
+        <option value="$PROJECT_DIR$/onlineshopping/main/models.py" />
+        <option value="$PROJECT_DIR$/onlineshopping/main/views.py" />
       </list>
     </option>
   </component>
@@ -370,27 +332,6 @@
               <item name="onlineshopping" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="onlineshopping" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
-            <path>
-              <item name="scrapy" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="onlineshopping" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="scrapy_app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="scrapy" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="onlineshopping" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="scrapy_app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="scrapy_app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="scrapy" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="onlineshopping" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="scrapy_app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="scrapy_app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="spiders" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -438,7 +379,7 @@
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2801277" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15722266" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -452,7 +393,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5027933" side_tool="true" weight="0.60032624" />
-      <window_info active="true" anchor="bottom" x="90" y="302" width="1253" height="189" id="Terminal" order="11" sideWeight="0.49720672" visible="true" weight="0.52365416" />
+      <window_info anchor="bottom" x="90" y="302" width="1253" height="189" id="Terminal" order="11" sideWeight="0.49720672" visible="true" weight="0.4959217" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49884528" weight="0.32626426" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -499,9 +440,6 @@
     <entry file="file://$PROJECT_DIR$/onlineshopping/scrapy_app/twistd.pid">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/onlineshopping/manage.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/onlineshopping/scrapy_app/scrapy_app/middlewares.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -535,21 +473,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#56#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/onlineshopping/celerybeat-schedule">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/onlineshopping/main/crawl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/env/lib/python3.6/site-packages/scrapy/crawler.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -578,41 +506,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/asmaa.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/onlineshopping/asmaa.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="68" selection-start-line="7" selection-start-column="68" selection-end-line="7" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/onlineshopping/LOGFILE">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/asmaa.txt" />
+    <entry file="file://$PROJECT_DIR$/onlineshopping/asmaa.txt" />
+    <entry file="file://$PROJECT_DIR$/onlineshopping/LOGFILE" />
     <entry file="file://$PROJECT_DIR$/onlineshopping/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="262">
           <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/onlineshopping/onlineshopping/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-          <folding>
-            <element signature="e#314#352#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -623,27 +523,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/onlineshopping/main/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/onlineshopping/main/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/onlineshopping/main/crawl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/onlineshopping/scrapy_app/scrapy_app/spiders/jumiaSpider.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -651,46 +530,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/onlineshopping/main/crawl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/onlineshopping/scrapy_app/scrapy_app/spiders/souqSpider.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/onlineshopping/onlineshopping/celery.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="240">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="e#0#56#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/onlineshopping/main/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/onlineshopping/main/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/onlineshopping/main/tasks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
+        <state relative-caret-position="60">
           <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
@@ -701,10 +567,57 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="150">
+          <first_editor relative-caret-position="80">
             <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/onlineshopping/manage.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/onlineshopping/onlineshopping/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="240" column="1" selection-start-line="240" selection-start-column="1" selection-end-line="240" selection-end-column="1" />
+          <folding>
+            <element signature="e#314#352#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/onlineshopping/main/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="16" selection-start-column="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/onlineshopping/main/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="56" lean-forward="true" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/onlineshopping/main/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="68" lean-forward="true" selection-start-line="10" selection-start-column="68" selection-end-line="10" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/onlineshopping/main/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
