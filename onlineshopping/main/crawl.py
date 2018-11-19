@@ -14,7 +14,7 @@ class CrawlerScript():
     def _crawl(self):
         self.crawler.crawl(JumiaSpider())
         self.crawler.crawl(SouqSpider())
-        self.crawler.start()
+        self.crawler.start(stop_after_crawl=False)
         self.crawler.stop()
 
     def crawl(self):
