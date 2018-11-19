@@ -14,13 +14,11 @@ class ScrapyAppPipeline(object):
 
     @classmethod
     def from_crawler(cls, crawler):
-        print("FROMMMMMMMMMMM_CLOWOWOWOWOW")
         return cls(
             unique_id=crawler.settings.get('unique_id'), # this will be passed from django view
         )
 
     def process_item(self, item, spider):
-        print("PROCESSSSSS_ITEEEEEM")
         obj = ScrapyItem.objects.filter(deal_title=item['deal_title']).first()
         if  not obj:
             scrapy_item = ScrapyItem()
